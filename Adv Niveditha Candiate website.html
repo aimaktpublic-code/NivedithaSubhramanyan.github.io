@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html lang="ml" data-lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adv. Niveditha Subhramanyan | BJP Guruvayur</title>
+<style>
+/* ─── FONTS ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@300;400;500;600;700;800&family=Noto+Serif+Malayalam:wght@400;600;700&display=swap');
+
+:root {
+  --font-display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  --font-malayalam: "Noto Sans Malayalam", sans-serif;
+  --saffron: #FF6200;
+  --deep-saffron: #D94E00;
+  --gold: #F5A623;
+  --gold-light: #FFD070;
+  --white: #FFFFFF;
+  --cream: #FFF9F0;
+  --navy: #0D1B3E;
+  --dark: #0A0A0A;
+  --green: #138808;
+  --text-dark: #1A0A00;
+  --text-mid: #3D2B1F;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: var(--font-display);
+  color: var(--text-dark);
+  background: var(--cream);
+  overflow-x: hidden;
+}
+[data-lang="ml"] body, [data-lang="ml"] * {
+  font-family: var(--font-malayalam);
+}
+[data-lang="ml"] h1,[data-lang="ml"] h2,[data-lang="ml"] h3,
+[data-lang="ml"] h4,[data-lang="ml"] .hero-name,
+[data-lang="ml"] .section-title,[data-lang="ml"] .act-title,
+[data-lang="ml"] .tl-title,[data-lang="ml"] .nav-title {
+  font-family: "Noto Serif Malayalam", serif;
+}
+
+/* headings use SF Pro Display with -30% letter spacing = -0.03em */
+h1, h2, h3, h4,
+.hero-name, .section-title, .act-title,
+.tl-title, .act-number, .achievement-label,
+.mandate-title, .quality-text h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+/* ─── LANGUAGE TOGGLE BAR ──────────────────────────── */
+.lang-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1100;
+  background: var(--dark);
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  gap: 6px;
+  border-bottom: 1px solid rgba(255,98,0,0.3);
+}
+.lang-btn {
+  height: 24px;
+  padding: 0 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: transparent;
+  color: rgba(255,255,255,0.5);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+.lang-btn.active {
+  background: var(--saffron);
+  border-color: var(--saffron);
+  color: white;
+}
+.lang-bar-label {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.1em;
+  margin-right: 8px;
+}
+
+/* ─── NAV ──────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 36px; left: 0; right: 0;
+  z-index: 999;
+  background: var(--navy);
+  border-bottom: 3px solid var(--saffron);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  height: 58px;
+}
+.nav-logo { display: flex; align-items: center; gap: 12px; }
+.nav-lotus { width: 32px; height: 32px; }
+.nav-title {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+.nav-links { display: flex; gap: 24px; list-style: none; }
+.nav-links a {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+.nav-links a:hover { color: var(--gold-light); border-bottom-color: var(--saffron); }
+.nav-right { display: flex; align-items: center; gap: 16px; }
+.admin-btn {
+  height: 30px;
+  padding: 0 14px;
+  background: rgba(255,98,0,0.15);
+  border: 1px solid rgba(255,98,0,0.4);
+  border-radius: 3px;
+  color: var(--gold-light);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+.admin-btn:hover { background: rgba(255,98,0,0.3); }
+.nav-flag { display: flex; gap: 3px; }
+.flag-s { width: 7px; height: 28px; border-radius: 2px; }
+
+/* ─── HERO ─────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #060E24 0%, #0f1f52 45%, var(--navy) 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 94px; /* 36 lang bar + 58 nav */
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 70% 55%, rgba(255,98,0,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 70% at 5% 50%, rgba(255,208,112,0.07) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-chakra {
+  position: absolute; right: -100px; top: 50%;
+  transform: translateY(-50%);
+  width: 700px; height: 700px;
+  opacity: 0.04;
+  animation: spin 90s linear infinite;
+}
+@keyframes spin { to { transform: translateY(-50%) rotate(360deg); } }
+
+.hero-inner {
+  position: relative; z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 60px;
+  align-items: center;
+  width: 100%; max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 5vw 80px;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(255,98,0,0.18);
+  border: 1px solid rgba(255,98,0,0.4);
+  border-radius: 4px;
+  padding: 5px 14px;
+  margin-bottom: 22px;
+}
+.hero-tag span {
+  font-size: 0.73rem; font-weight: 600;
+  color: var(--gold-light);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.hero-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--saffron);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.hero-name {
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 6px;
+  letter-spacing: -0.03em;
+}
+.hero-name .adv-prefix {
+  display: block;
+  font-size: 0.38em;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+.hero-desig {
+  font-size: 1rem; font-weight: 400;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 4px;
+  font-style: italic;
+}
+.hero-constituency {
+  font-size: 1.2rem; font-weight: 700;
+  color: var(--gold);
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
+}
+.hero-quote {
+  font-size: 1.02rem; line-height: 1.7;
+  color: rgba(255,255,255,0.55);
+  font-style: italic;
+  border-left: 3px solid var(--saffron);
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+.hero-quote strong { color: var(--gold-light); font-style: normal; }
+
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--saffron); color: white;
+  border: none; padding: 13px 30px;
+  font-family: var(--font-display); font-size: 0.85rem;
+  font-weight: 600; letter-spacing: -0.01em;
+  cursor: pointer; text-decoration: none; display: inline-block;
+  transition: all 0.25s;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+}
+.btn-primary:hover { background: var(--deep-saffron); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,98,0,0.4); }
+.btn-ghost {
+  background: transparent; color: var(--gold-light);
+  border: 1px solid rgba(245,166,35,0.5);
+  padding: 12px 30px;
+  font-family: var(--font-display); font-size: 0.85rem;
+  font-weight: 500; letter-spacing: -0.01em;
+  cursor: pointer; text-decoration: none; display: inline-block;
+  transition: all 0.25s;
+}
+.btn-ghost:hover { background: rgba(245,166,35,0.1); transform: translateY(-2px); }
+
+/* Hero photo frame */
+.hero-photo-wrap { position: relative; display: flex; justify-content: center; }
+.photo-frame-outer {
+  position: relative;
+  width: 300px;
+}
+.photo-frame-outer::before {
+  content: '';
+  position: absolute; top: -10px; left: -10px;
+  right: 10px; bottom: 10px;
+  border: 2px solid rgba(255,98,0,0.5);
+  border-radius: 3px;
+  pointer-events: none;
+}
+.photo-frame-outer::after {
+  content: '';
+  position: absolute; top: 10px; left: 10px;
+  right: -10px; bottom: -10px;
+  background: rgba(255,98,0,0.15);
+  border-radius: 3px; z-index: -1;
+}
+.candidate-photo-hero {
+  width: 100%; aspect-ratio: 3/4;
+  background: linear-gradient(160deg, #1e2e5e 0%, #2a1500 100%);
+  border-radius: 3px; overflow: hidden;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  position: relative; cursor: pointer;
+}
+.candidate-photo-hero img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.photo-placeholder {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 10px;
+  color: rgba(255,255,255,0.25);
+  font-size: 0.82rem; text-align: center; padding: 20px;
+}
+.photo-badge {
+  position: absolute; bottom: -18px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--saffron); color: white;
+  padding: 7px 24px;
+  font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.06em; white-space: nowrap;
+  clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 100%, 0 100%);
+}
+
+/* ─── TRICOLOR ──────────────────────────────────────── */
+.tricolor { display: flex; height: 7px; }
+.tricolor div:nth-child(1) { flex:1; background: var(--saffron); }
+.tricolor div:nth-child(2) { flex:1; background: var(--white); }
+.tricolor div:nth-child(3) { flex:1; background: var(--green); }
+
+/* ─── CAMPAIGN SLIDER ───────────────────────────────── */
+.slider-section {
+  background: var(--dark);
+  padding: 70px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.slider-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,98,0,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.slider-header {
+  text-align: center;
+  padding: 0 5vw;
+  margin-bottom: 36px;
+}
+.slider-section .section-label {
+  font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--saffron); margin-bottom: 10px; display: block;
+}
+.slider-section .section-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800; color: var(--white);
+  letter-spacing: -0.03em;
+}
+.slider-section .section-title::after {
+  content: ''; display: block;
+  width: 50px; height: 3px;
+  background: var(--saffron);
+  margin: 14px auto 0;
+}
+
+.slider-track-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-track {
+  display: flex;
+  transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+.slide-item {
+  flex: 0 0 85vw;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2vw;
+  min-width: 0;
+}
+.slide-item.single { flex: 0 0 100%; max-width: 100%; padding: 0 5vw; }
+
+.slide-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #111;
+}
+.slide-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+.slide-caption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 20px 24px 16px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+  color: white;
+  font-size: 0.9rem; font-weight: 500;
+}
+
+/* Placeholder slides */
+.slide-placeholder {
+  width: 100%; aspect-ratio: 16/9;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a1500 100%);
+  border-radius: 4px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 14px;
+  border: 2px dashed rgba(255,98,0,0.2);
+}
+.slide-placeholder-icon { font-size: 3rem; opacity: 0.2; }
+.slide-placeholder-text {
+  font-size: 0.9rem; color: rgba(255,255,255,0.2);
+  text-align: center; padding: 0 20px;
+  line-height: 1.6;
+}
+
+/* Slider controls */
+.slider-controls {
+  display: flex; align-items: center; justify-content: center;
+  gap: 20px; margin-top: 28px;
+}
+.slider-btn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white; font-size: 1.2rem;
+  cursor: pointer; transition: all 0.2s;
+  display: flex; align-items: center; justify-content: center;
+}
+.slider-btn:hover { background: var(--saffron); border-color: var(--saffron); }
+.slider-dots { display: flex; gap: 8px; }
+.slider-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  cursor: pointer; transition: all 0.2s;
+  border: none;
+}
+.slider-dot.active { background: var(--saffron); transform: scale(1.3); }
+
+/* ─── SECTION COMMON ────────────────────────────────── */
+.section-label {
+  font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--saffron); margin-bottom: 10px; display: block;
+}
+.section-title {
+  font-size: clamp(1.7rem, 3.5vw, 2.8rem);
+  font-weight: 800; color: var(--navy);
+  line-height: 1.15; margin-bottom: 44px;
+  letter-spacing: -0.03em;
+}
+.section-title::after {
+  content: ''; display: block;
+  width: 50px; height: 4px;
+  background: var(--saffron); margin-top: 14px;
+}
+
+/* ─── STORY ─────────────────────────────────────────── */
+.story-section { background: var(--cream); padding: 90px 5vw; }
+.acts-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 32px; max-width: 1200px; margin: 0 auto;
+}
+.act-card {
+  padding: 32px; background: white; border-radius: 3px;
+  border-top: 4px solid var(--saffron);
+  box-shadow: 0 2px 18px rgba(13,27,62,0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.act-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(13,27,62,0.13); }
+.act-number {
+  font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.15em; color: var(--saffron);
+  margin-bottom: 10px; text-transform: uppercase;
+}
+.act-title {
+  font-size: 1.18rem; font-weight: 800;
+  color: var(--navy); margin-bottom: 14px;
+  line-height: 1.3; letter-spacing: -0.03em;
+}
+.act-body {
+  font-size: 1.02rem; line-height: 1.75;
+  color: var(--text-mid);
+}
+.act-quote {
+  margin-top: 18px; padding: 14px 18px;
+  background: #FFF4E6; border-left: 4px solid var(--gold);
+  font-style: italic; font-size: 1rem;
+  color: #5A3010; border-radius: 0 3px 3px 0;
+  line-height: 1.65;
+}
+
+/* ─── CANDIDATE FEATURE SECTION ─────────────────────── */
+.candidate-feature {
+  background: var(--navy);
+  padding: 90px 5vw;
+  position: relative; overflow: hidden;
+}
+.candidate-feature::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 30% 50%, rgba(255,98,0,0.1) 0%, transparent 60%);
+}
+.candidate-feature-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 420px 1fr;
+  gap: 80px; align-items: center;
+  position: relative; z-index: 1;
+}
+.candidate-photo-feature {
+  position: relative;
+}
+.candidate-photo-feature::before {
+  content: '';
+  position: absolute; top: -14px; right: -14px;
+  bottom: 14px; left: 14px;
+  border: 2px solid rgba(255,98,0,0.4);
+  border-radius: 3px;
+}
+.candidate-photo-feature::after {
+  content: '';
+  position: absolute; top: 14px; left: -14px;
+  bottom: -14px; right: 14px;
+  background: rgba(255,98,0,0.12); border-radius: 3px; z-index: -1;
+}
+.feature-photo-box {
+  width: 100%; aspect-ratio: 4/5;
+  background: linear-gradient(160deg, #1e2e5e 0%, #2a1500 100%);
+  border-radius: 3px; overflow: hidden;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  cursor: pointer; position: relative;
+}
+.feature-photo-box img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block;
+}
+.feature-text .section-label { color: var(--gold); }
+.feature-text .section-title { color: white; }
+.feature-text .section-title::after { background: var(--gold); }
+.feature-body {
+  font-size: 1.1rem; line-height: 1.8;
+  color: rgba(255,255,255,0.68);
+  margin-bottom: 28px;
+}
+.feature-stat-row {
+  display: flex; gap: 32px; flex-wrap: wrap;
+}
+.feature-stat { text-align: center; }
+.feature-stat-num {
+  display: block;
+  font-size: 2rem; font-weight: 800;
+  color: var(--gold); line-height: 1;
+  letter-spacing: -0.03em; margin-bottom: 4px;
+}
+.feature-stat-label {
+  font-size: 0.78rem; font-weight: 600;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+
+/* ─── TIMELINE ──────────────────────────────────────── */
+.timeline-section {
+  background: var(--navy); padding: 90px 5vw;
+  position: relative;
+}
+.timeline-section::before {
+  content: ''; position: absolute;
+  top: 0; bottom: 0; left: 0; width: 5px;
+  background: linear-gradient(to bottom, var(--saffron), var(--gold));
+}
+.timeline-section .section-title { color: white; }
+.timeline-section .section-title::after { background: var(--gold); }
+.timeline-section .section-label { color: var(--gold); }
+.timeline {
+  display: flex; flex-direction: column;
+  padding-left: 28px; position: relative;
+  max-width: 1200px; margin: 0 auto;
+}
+.timeline::before {
+  content: ''; position: absolute;
+  left: 0; top: 0; bottom: 0; width: 2px;
+  background: rgba(255,98,0,0.3);
+}
+.tl-item {
+  display: flex; gap: 24px;
+  padding: 22px 0; position: relative;
+}
+.tl-item::before {
+  content: ''; position: absolute;
+  left: -34px; top: 30px;
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--saffron);
+  border: 3px solid var(--navy);
+  box-shadow: 0 0 0 2px var(--saffron);
+}
+.tl-year {
+  font-size: 1rem; font-weight: 800;
+  color: var(--gold); min-width: 78px;
+  padding-top: 2px; letter-spacing: -0.02em;
+}
+.tl-content { flex: 1; }
+.tl-title {
+  font-size: 0.95rem; font-weight: 700;
+  color: white; margin-bottom: 5px; letter-spacing: -0.02em;
+}
+.tl-desc {
+  font-size: 0.97rem; line-height: 1.65;
+  color: rgba(255,255,255,0.6);
+}
+
+/* ─── ACHIEVEMENTS ──────────────────────────────────── */
+.achievements-section { padding: 90px 5vw; background: white; }
+.achievements-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 28px; max-width: 1200px; margin: 0 auto;
+}
+.achievement-card {
+  text-align: center; padding: 36px 22px;
+  background: var(--cream); border-radius: 3px;
+  border-bottom: 4px solid var(--saffron);
+  position: relative; overflow: hidden;
+  transition: transform 0.3s;
+}
+.achievement-card::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--saffron), var(--gold));
+}
+.achievement-card:hover { transform: translateY(-4px); }
+.achievement-icon { font-size: 2.2rem; display: block; margin-bottom: 14px; }
+.achievement-stat {
+  font-size: 2rem; font-weight: 800;
+  color: var(--saffron); display: block;
+  line-height: 1; margin-bottom: 6px; letter-spacing: -0.03em;
+}
+.achievement-label {
+  font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.1em; color: var(--navy);
+  text-transform: uppercase; margin-bottom: 10px;
+  display: block;
+}
+.achievement-desc { font-size: 0.92rem; color: var(--text-mid); line-height: 1.6; }
+
+/* ─── MANDATE ───────────────────────────────────────── */
+.mandate-section {
+  background: linear-gradient(135deg, var(--saffron) 0%, var(--deep-saffron) 100%);
+  padding: 80px 5vw; position: relative; overflow: hidden;
+}
+.mandate-section::after {
+  content: 'BJP';
+  position: absolute; right: -30px; bottom: -80px;
+  font-family: var(--font-display); font-size: 22rem; font-weight: 900;
+  color: rgba(255,255,255,0.05); line-height: 1; pointer-events: none;
+  letter-spacing: -0.05em;
+}
+.mandate-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+.mandate-section .section-label { color: rgba(255,255,255,0.65); }
+.mandate-section .section-title { color: white; }
+.mandate-section .section-title::after { background: rgba(255,255,255,0.45); }
+.mandate-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 20px; margin-top: 36px;
+}
+.mandate-item {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 22px; background: rgba(255,255,255,0.12);
+  border-radius: 3px; border-left: 3px solid rgba(255,255,255,0.35);
+  transition: background 0.2s;
+}
+.mandate-item:hover { background: rgba(255,255,255,0.18); }
+.mandate-num {
+  font-size: 1.8rem; font-weight: 900;
+  color: rgba(255,255,255,0.2); line-height: 1;
+  min-width: 38px; letter-spacing: -0.04em;
+}
+.mandate-title {
+  font-size: 0.95rem; font-weight: 700;
+  color: white; margin-bottom: 5px; letter-spacing: -0.02em;
+}
+.mandate-desc { font-size: 0.92rem; color: rgba(255,255,255,0.72); line-height: 1.6; }
+
+/* ─── WHY ───────────────────────────────────────────── */
+.why-section { padding: 90px 5vw; background: var(--cream); }
+.qualities-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 28px; max-width: 1200px; margin: 0 auto;
+}
+.quality-item { display: flex; gap: 18px; align-items: flex-start; }
+.quality-icon-wrap {
+  width: 46px; height: 46px; flex-shrink: 0;
+  background: var(--saffron); display: flex;
+  align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+.quality-text h4 {
+  font-size: 1rem; font-weight: 700;
+  color: var(--navy); margin-bottom: 5px; letter-spacing: -0.02em;
+}
+.quality-text p { font-size: 0.97rem; color: var(--text-mid); line-height: 1.65; }
+
+/* ─── LEGACY ────────────────────────────────────────── */
+.legacy-section {
+  background: var(--navy); padding: 90px 5vw;
+  position: relative; overflow: hidden;
+}
+.legacy-inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 70px; align-items: center;
+  max-width: 1200px; margin: 0 auto;
+  position: relative; z-index: 1;
+}
+.legacy-section .section-label { color: var(--gold); }
+.legacy-section .section-title { color: white; }
+.legacy-section .section-title::after { background: var(--gold); }
+.legacy-body {
+  font-size: 1.08rem; line-height: 1.8;
+  color: rgba(255,255,255,0.68);
+}
+.legacy-quote-card {
+  padding: 32px 34px;
+  background: rgba(255,255,255,0.05);
+  border-left: 4px solid var(--gold); position: relative;
+}
+.legacy-quote-card::before {
+  content: '\201C';
+  font-size: 6rem; color: var(--saffron); opacity: 0.25;
+  position: absolute; top: -14px; left: 14px; line-height: 1;
+  font-family: Georgia, serif;
+}
+.legacy-quote-card p {
+  font-size: 1.18rem; font-style: italic;
+  color: white; line-height: 1.72; position: relative; z-index: 1;
+}
+.legacy-quote-card cite {
+  display: block; margin-top: 14px;
+  font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.08em; color: var(--gold);
+  font-style: normal; text-transform: uppercase;
+}
+
+/* ─── VOTE CTA ──────────────────────────────────────── */
+.vote-section {
+  background: var(--dark); padding: 80px 5vw;
+  text-align: center; position: relative; overflow: hidden;
+}
+.vote-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(255,98,0,0.1) 0%, transparent 70%);
+}
+.vote-inner { position: relative; z-index: 1; }
+.vote-lotus { font-size: 3.5rem; display: block; margin-bottom: 22px; animation: float 3s ease-in-out infinite; }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+.vote-heading {
+  font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 900;
+  color: white; line-height: 1.15; margin-bottom: 12px;
+  letter-spacing: -0.03em;
+}
+.vote-heading .hl { color: var(--saffron); }
+.vote-sub {
+  font-family: var(--font-malayalam); font-size: 1.35rem;
+  color: var(--gold-light); margin-bottom: 36px; letter-spacing: 0.02em;
+}
+[data-lang="en"] .vote-sub { font-family: var(--font-display); font-size: 1.1rem; }
+.vote-cta-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--saffron); color: white;
+  padding: 16px 44px; border: none; cursor: pointer;
+  font-family: var(--font-display); font-size: 0.95rem;
+  font-weight: 700; letter-spacing: 0.01em;
+  transition: all 0.3s; text-decoration: none;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 100%, 14px 100%);
+  margin-bottom: 44px;
+}
+.vote-cta-btn:hover { background: var(--deep-saffron); transform: scale(1.04); box-shadow: 0 12px 40px rgba(255,98,0,0.4); }
+.footer-strip {
+  display: flex; align-items: center; justify-content: center;
+  gap: 24px; flex-wrap: wrap;
+  margin-top: 44px; padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.footer-strip span { font-size: 0.8rem; color: rgba(255,255,255,0.3); letter-spacing: 0.06em; }
+.footer-strip .sep { color: var(--saffron); }
+
+/* ─── FADE-IN ───────────────────────────────────────── */
+.fade-in { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ─── LOGIN MODAL ───────────────────────────────────── */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(0,0,0,0.85); backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+.login-modal {
+  background: #0D1B3E;
+  border: 1px solid rgba(255,98,0,0.3);
+  border-top: 4px solid var(--saffron);
+  border-radius: 4px; padding: 44px 40px;
+  width: 380px; max-width: 90vw;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+}
+.modal-close {
+  position: absolute; top: 14px; right: 16px;
+  background: none; border: none; color: rgba(255,255,255,0.4);
+  font-size: 1.3rem; cursor: pointer; transition: color 0.2s;
+}
+.modal-close:hover { color: white; }
+.login-logo { text-align: center; margin-bottom: 28px; }
+.login-logo-icon { font-size: 2.5rem; display: block; margin-bottom: 8px; }
+.login-logo-title {
+  font-family: var(--font-display); font-size: 1rem; font-weight: 700;
+  color: var(--gold-light); letter-spacing: -0.01em;
+}
+.login-logo-sub { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-top: 2px; }
+.form-group { margin-bottom: 18px; }
+.form-label {
+  display: block; font-size: 0.75rem; font-weight: 600;
+  color: rgba(255,255,255,0.5); letter-spacing: 0.08em;
+  text-transform: uppercase; margin-bottom: 7px;
+}
+.form-input {
+  width: 100%; padding: 11px 14px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 3px; color: white;
+  font-family: var(--font-display); font-size: 0.95rem;
+  transition: border-color 0.2s; outline: none;
+}
+.form-input:focus { border-color: var(--saffron); background: rgba(255,98,0,0.08); }
+.login-err {
+  font-size: 0.82rem; color: #FF4D4D;
+  margin-bottom: 14px; display: none;
+  padding: 8px 12px; background: rgba(255,77,77,0.1);
+  border-radius: 3px; border-left: 3px solid #FF4D4D;
+}
+.login-submit {
+  width: 100%; padding: 12px;
+  background: var(--saffron); color: white; border: none;
+  font-family: var(--font-display); font-size: 0.9rem;
+  font-weight: 700; letter-spacing: 0.02em;
+  cursor: pointer; border-radius: 3px; transition: all 0.2s;
+}
+.login-submit:hover { background: var(--deep-saffron); }
+
+/* ─── ADMIN PANEL ───────────────────────────────────── */
+.admin-panel {
+  position: fixed; inset: 0; z-index: 1500;
+  background: rgba(0,0,0,0.92); backdrop-filter: blur(8px);
+  display: none; flex-direction: column;
+  padding: 0;
+}
+.admin-panel.open { display: flex; }
+.admin-topbar {
+  background: var(--navy);
+  border-bottom: 3px solid var(--saffron);
+  padding: 0 28px; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.admin-topbar h2 {
+  font-size: 1rem; font-weight: 700; color: white;
+  letter-spacing: -0.02em;
+}
+.admin-topbar-right { display: flex; gap: 12px; align-items: center; }
+.admin-logout {
+  padding: 7px 16px;
+  background: rgba(255,77,77,0.15);
+  border: 1px solid rgba(255,77,77,0.3);
+  color: #FF7070; border-radius: 3px;
+  font-size: 0.78rem; font-weight: 600; cursor: pointer;
+  transition: all 0.2s;
+}
+.admin-logout:hover { background: rgba(255,77,77,0.25); }
+.admin-close {
+  background: none; border: none;
+  color: rgba(255,255,255,0.5); font-size: 1.4rem; cursor: pointer;
+}
+.admin-body {
+  flex: 1; overflow-y: auto; padding: 32px 28px;
+}
+.admin-section {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 4px; padding: 28px;
+  margin-bottom: 24px;
+}
+.admin-section-title {
+  font-size: 0.9rem; font-weight: 700; color: var(--gold);
+  letter-spacing: -0.01em; margin-bottom: 18px;
+  display: flex; align-items: center; gap: 10px;
+}
+.admin-section-title span { font-size: 1.1rem; }
+/* Candidate photo upload in admin */
+.admin-photo-slot {
+  display: flex; align-items: center; gap: 20px;
+  padding: 16px; background: rgba(255,255,255,0.04);
+  border-radius: 3px; margin-bottom: 12px;
+}
+.admin-photo-preview {
+  width: 80px; height: 80px;
+  background: rgba(255,255,255,0.08); border-radius: 3px;
+  overflow: hidden; flex-shrink: 0; display: flex;
+  align-items: center; justify-content: center;
+  font-size: 1.5rem; color: rgba(255,255,255,0.2);
+}
+.admin-photo-preview img { width:100%; height:100%; object-fit:cover; object-position:center top; }
+.admin-photo-info { flex: 1; }
+.admin-photo-info h4 { font-size: 0.88rem; font-weight: 600; color: white; margin-bottom: 4px; }
+.admin-photo-info p { font-size: 0.78rem; color: rgba(255,255,255,0.35); line-height: 1.5; }
+.admin-photo-actions { display: flex; gap: 10px; }
+.admin-upload-btn, .admin-delete-btn {
+  padding: 7px 16px; border-radius: 3px; font-size: 0.78rem;
+  font-weight: 600; cursor: pointer; transition: all 0.2s;
+}
+.admin-upload-btn {
+  background: rgba(255,98,0,0.2); border: 1px solid rgba(255,98,0,0.4);
+  color: var(--gold-light);
+}
+.admin-upload-btn:hover { background: rgba(255,98,0,0.35); }
+.admin-delete-btn {
+  background: rgba(255,77,77,0.1); border: 1px solid rgba(255,77,77,0.3);
+  color: #FF7070;
+}
+.admin-delete-btn:hover { background: rgba(255,77,77,0.2); }
+
+/* Campaign photos grid in admin */
+.campaign-photos-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px; margin-bottom: 20px;
+}
+.campaign-photo-item {
+  position: relative; border-radius: 3px; overflow: hidden;
+  aspect-ratio: 16/9; background: rgba(255,255,255,0.06);
+  cursor: pointer;
+}
+.campaign-photo-item img { width:100%; height:100%; object-fit:cover; object-position: center center; }
+.campaign-photo-delete {
+  position: absolute; top: 6px; right: 6px;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: rgba(0,0,0,0.7); border: none; color: #FF7070;
+  font-size: 0.8rem; cursor: pointer; display: none;
+  align-items: center; justify-content: center;
+  transition: background 0.2s;
+}
+.campaign-photo-item:hover .campaign-photo-delete { display: flex; }
+.campaign-photo-delete:hover { background: rgba(255,50,50,0.8); color: white; }
+
+.admin-upload-area {
+  border: 2px dashed rgba(255,98,0,0.3);
+  border-radius: 4px; padding: 32px;
+  text-align: center; cursor: pointer;
+  transition: all 0.2s;
+}
+.admin-upload-area:hover { border-color: var(--saffron); background: rgba(255,98,0,0.05); }
+.admin-upload-area-text { font-size: 0.88rem; color: rgba(255,255,255,0.4); line-height: 1.7; }
+.admin-upload-area-icon { font-size: 2.2rem; display: block; margin-bottom: 10px; opacity: 0.4; }
+.caption-input {
+  width: 100%; padding: 8px 12px; margin-top: 8px;
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 3px; color: white;
+  font-family: var(--font-display); font-size: 0.85rem;
+}
+.caption-input::placeholder { color: rgba(255,255,255,0.25); }
+.progress-bar-wrap {
+  height: 4px; background: rgba(255,255,255,0.1);
+  border-radius: 2px; overflow: hidden; margin-top: 12px;
+  display: none;
+}
+.progress-bar { height: 100%; background: var(--saffron); width: 0%; transition: width 0.3s; }
+.toast {
+  position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%);
+  background: var(--navy); color: white;
+  padding: 12px 24px; border-radius: 4px;
+  font-size: 0.88rem; font-weight: 500; z-index: 3000;
+  border-left: 4px solid var(--saffron);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  opacity: 0; transition: opacity 0.3s;
+  pointer-events: none;
+}
+.toast.show { opacity: 1; }
+
+/* ─── RESPONSIVE ────────────────────────────────────── */
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .hero-quote { text-align: left; }
+  .hero-ctas { justify-content: center; }
+  .hero-photo-wrap { justify-content: center; margin-top: 40px; order: -1; }
+  .photo-frame-outer { width: 240px; }
+  .acts-grid { grid-template-columns: 1fr; }
+  .candidate-feature-inner { grid-template-columns: 1fr; }
+  .candidate-photo-feature { max-width: 320px; margin: 0 auto; }
+  .achievements-grid { grid-template-columns: 1fr 1fr; }
+  .mandate-grid { grid-template-columns: 1fr; }
+  .legacy-inner { grid-template-columns: 1fr; gap: 40px; }
+  .qualities-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .slide-item { flex: 0 0 90vw; padding: 0 3vw; }
+}
+@media (max-width: 600px) {
+  .achievements-grid { grid-template-columns: 1fr; }
+  .hero-ctas { flex-direction: column; align-items: center; }
+  .feature-stat-row { justify-content: center; }
+}
+
+section {
+  min-height: 100vh;
+  
+  position: relative;
+}
+
+/* full bg system */
+.section-bg { display:none; /* disabled */
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  opacity: 0.4;
+}
+.section-overlay { /* no overlay needed */
+  position: relative;
+  z-index: 1;
+}
+
+/* slider full fit */
+.slide-item {
+  flex: 0 0 100vw;
+  max-width: 100vw;
+  padding: 0;
+}
+.slide-img-wrap {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: unset;
+  border-radius: 0;
+}
+
+/* socials */
+.hero-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+.hero-socials a {
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.7);
+  transition: all 0.2s;
+}
+.hero-socials a:hover {
+  color: var(--saffron);
+  transform: translateY(-2px);
+}
+
+/* hero spacing fix */
+.hero-inner {
+  gap: 40px;
+  padding: 40px 5vw 60px;
+}
+.hero-name { margin-bottom: 10px; }
+.hero-constituency { margin-bottom: 18px; }
+.hero-quote { margin-bottom: 24px; }
+
+
+/* === FINAL FIX: CONTINUOUS SCROLL + CLEAN LAYOUT === */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* LARGE CONTENT SECTIONS SHOULD EXPAND */
+.story-section,
+.timeline-section,
+.achievements-section,
+.mandate-section,
+.why-section,
+.legacy-section {
+  min-height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- LANGUAGE BAR -->
+<div class="lang-bar">
+  <span class="lang-bar-label">LANGUAGE</span>
+  <button class="lang-btn active" id="btnML" onclick="setLang('ml')">മലയാളം</button>
+  <button class="lang-btn" id="btnEN" onclick="setLang('en')">English</button>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <svg class="nav-lotus" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 36C20 36 5 26 5 15C5 9 12 5 20 10C28 5 35 9 35 15C35 26 20 36 20 36Z" fill="#FF6200" opacity="0.9"/>
+      <path d="M20 30C20 30 10 23 10 16C10 12.5 14 9.5 20 13C26 9.5 30 12.5 30 16C30 23 20 30 20 30Z" fill="#FF8C42"/>
+      <path d="M20 24C20 24 14 20 14 16C14 13.8 16.5 12 20 14.5C23.5 12 26 13.8 26 16C26 20 20 24 20 24Z" fill="#FFD070"/>
+      <circle cx="20" cy="16.5" r="3.5" fill="#FFF" opacity="0.9"/>
+    </svg>
+    <div class="nav-title" id="navTitle">
+      അഡ്വ. നിവേദിത സുബ്രഹ്മണ്യൻ<br>
+      <span style="font-size:0.68rem;color:rgba(255,200,100,0.55);letter-spacing:0.03em;" id="navSub">ബി.ജെ.പി · ഗുരുവായൂർ മണ്ഡലം</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#story" data-key="nav_story">കഥ</a></li>
+    <li><a href="#journey" data-key="nav_journey">യാത്ര</a></li>
+    <li><a href="#achievements" data-key="nav_achieve">നേട്ടങ്ങൾ</a></li>
+    <li><a href="#mandate" data-key="nav_mandate">ദൗത്യം</a></li>
+    <li><a href="#vote" data-key="nav_vote">വോട്ട്</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="admin-btn" onclick="openLogin()" id="adminNavBtn">⚙ Admin</button>
+    <div class="nav-flag">
+      <div class="flag-s" style="background:#FF6200"></div>
+      <div class="flag-s" style="background:#fff"></div>
+      <div class="flag-s" style="background:#138808"></div>
+
+      <div class="hero-socials" id="heroSocials">
+        <a href="#" id="instaLink" target="_blank">📸</a>
+        <a href="#" id="fbLink" target="_blank">📘</a>
+        <a href="#" id="ytLink" target="_blank">▶️</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-chakra" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="47" fill="none" stroke="white" stroke-width="0.6"/>
+    <circle cx="50" cy="50" r="7.5" fill="none" stroke="white" stroke-width="0.6"/>
+    <circle cx="50" cy="50" r="3.5" fill="white" opacity="0.7"/>
+    <g id="cspokes"></g>
+  </svg>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-tag">
+        <div class="hero-dot"></div>
+        <span data-key="hero_tag">ഭാരതീയ ജനതാ പാർട്ടി · NDA · ഗുരുവായൂർ</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="adv-prefix" data-key="hero_adv">അഭിഭാഷക</span>
+        <span data-key="hero_name1">നിവേദിത</span><br>
+        <span data-key="hero_name2">സുബ്രഹ്മണ്യൻ</span>
+      </h1>
+      <p class="hero-desig" data-key="hero_desig">ബി.ജെ.പി. തൃശൂർ ജില്ലാ അധ്യക്ഷ · മുൻ മഹിളാ മോർച്ച സംസ്ഥാന അധ്യക്ഷ</p>
+      <p class="hero-constituency" data-key="hero_const">MLA സ്ഥാനാർഥി — ഗുരുവായൂർ മണ്ഡലം</p>
+      <p class="hero-quote">
+        <span data-key="hero_quote_pre">ഗുരുവായൂർ ജനം അവളെ </span><strong data-key="hero_quote_name">"സരസ്വതി"</strong><span data-key="hero_quote_post"> എന്ന് വിളിക്കുന്നു — ശാന്തമായ, പ്രകാശമുള്ള, ആദർശനിഷ്ഠയുള്ള. അവൾ പ്രവേശിക്കുന്ന ഓരോ ഇടത്തും വെളിച്ചം കൊണ്ടുവരുന്ന ഒരു നേതാവ്.</span>
+      </p>
+      <div class="hero-ctas">
+        <a href="#story" class="btn-primary" data-key="btn_story">അവളുടെ കഥ</a>
+        <a href="#mandate" class="btn-ghost" data-key="btn_vision">നമ്മുടെ കാഴ്ചപ്പാട്</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="photo-frame-outer">
+        <div class="candidate-photo-hero" id="heroPhotoBox">
+          <div class="photo-placeholder" id="heroPhotoPlaceholder">
+            <div style="font-size:3rem;opacity:0.2">🪷</div>
+            <div style="font-size:0.8rem;opacity:0.35" data-key="photo_upload_hint">ഫോട്ടോ ഇവിടെ</div>
+          </div>
+        </div>
+        <div class="photo-badge" data-key="photo_badge">BJP · NDA സ്ഥാനാർഥി</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tricolor"><div></div><div></div><div></div></div>
+
+<!-- CAMPAIGN PHOTO SLIDER -->
+<section class="slider-section" id="highlights">
+  <div class="slider-header">
+    <span class="section-label" data-key="slider_label">പ്രചാരണ ഹൈലൈറ്റ്സ്</span>
+    <h2 class="section-title" data-key="slider_title">ജനങ്ങളോടൊപ്പം</h2>
+  </div>
+  <div class="slider-track-wrapper">
+    <div class="slider-track" id="sliderTrack"></div>
+  </div>
+  <div class="slider-controls">
+    <button class="slider-btn" id="prevBtn" onclick="slideMove(-1)">‹</button>
+    <div class="slider-dots" id="sliderDots"></div>
+    <button class="slider-btn" id="nextBtn" onclick="slideMove(1)">›</button>
+  </div>
+</section>
+
+<div class="tricolor"><div></div><div></div><div></div></div>
+
+<!-- STORY -->
+<section class="story-section" id="story">
+  <div style="max-width:1200px;margin:0 auto;">
+    <span class="section-label" data-key="story_label">അവളുടെ കഥ</span>
+    <h2 class="section-title" data-key="story_title">പ്രതിരോധത്തിൽ ജനിച്ചവൾ,<br>സേവനത്തിനായി ഉയർന്നവൾ</h2>
+
+    <div class="acts-grid">
+      <div class="act-card fade-in">
+        <div class="act-number" data-key="act1_num">ഘട്ടം I · 1975</div>
+        <h3 class="act-title" data-key="act1_title">കേരളത്തിലെ ഏറ്റവും കുഞ്ഞ് രാഷ്ട്രീയ തടവുകാരി</h3>
+        <p class="act-body" data-key="act1_body">1975-ലെ അടിയന്തരാവസ്ഥ കാലത്ത് ഇന്ദിരാ ഗാന്ധി പൗരസ്വാതന്ത്ര്യം റദ്ദാക്കി. കേരളത്തിൽ 7,314-ലധികം പേർ ജയിലിലടക്കപ്പെട്ടു. അക്കൂട്ടത്തിൽ രാധ ബാലകൃഷ്ണനും ഉണ്ടായിരുന്നു — മൂന്ന് വയസ്സ് മാത്രമുള്ള കുഞ്ഞ് നിവേദിതയോടൊപ്പം.<br><br>പൊലീസ് അമ്മയിൽ നിന്ന് കുഞ്ഞിനെ വേർപെടുത്താൻ ശ്രമിച്ചെങ്കിലും കുഞ്ഞ് അമ്മയുടെ കൈകൾ ഒഴിഞ്ഞ് വിടേണ്ടതില്ലെന്ന് ഉറച്ചു. ഒടുവിൽ ഇരുവരെയും ഒന്നിച്ച് അറസ്റ്റ് ചെയ്ത് പാലക്കാട് കോട്ട ജയിലിൽ ഒരു മാസം പാർപ്പിച്ചു.</p>
+        <div class="act-quote" data-key="act1_quote">കേരളത്തിലെ ഏറ്റവും പ്രായം കുറഞ്ഞ രാഷ്ട്രീയ തടവുകാരിക്ക് അന്ന് മൂന്ന് വയസ്സ് മാത്രം. എന്തിനാണ് ജയിലിൽ കിടക്കുന്നതെന്ന് മനസ്സ് അറിഞ്ഞില്ലെങ്കിലും, ശരീരം ഓർമ്മിച്ചു — ശരിയുടെ ഭാഗത്ത് നിൽക്കുമ്പോൾ ചിലപ്പോൾ ജയിൽ മുറിക്കുള്ളിൽ നിൽക്കേണ്ടി വരും.</div>
+      </div>
+
+      <div class="act-card fade-in">
+        <div class="act-number" data-key="act2_num">ഘട്ടം II · 1983</div>
+        <h3 class="act-title" data-key="act2_title">മുഖ്യമന്ത്രിക്ക് അടി കൊടുത്ത ഒരമ്മ</h3>
+        <p class="act-body" data-key="act2_body">ഇതാണ് നിവേദിതയെ വളർത്തിയ അമ്മ. രാധ ബാലകൃഷ്ണൻ — ധീരയും ആദർശനിഷ്ഠയുള്ളവളും. നീലക്കൽ പ്രക്ഷോഭകാലത്ത്, ഹിന്ദു ഭക്തരെ പരിഹസിച്ച മുഖ്യമന്ത്രി കരുണാകരനെ ഗുരുവായൂർ ക്ഷേത്രത്തിൽ പ്രവേശിക്കുന്നതിൽ നിന്ന് തടഞ്ഞ് സ്ത്രീ സമൂഹത്തെ ഒരുമിപ്പിച്ചു.<br><br>ഒടുവിൽ വീണ്ടും ജയിലിൽ പോയ ആ അമ്മ, ഒരു ഹീറോ ആയി തിരിച്ചുവന്നു. ബി.ജെ.പി. കേരള മഹിളാ മോർച്ചയുടെ സംസ്ഥാന അധ്യക്ഷ പദവിയിൽ ആ ജ്വാലയോടെ തന്നെ സേവനം ചെയ്തു.</p>
+        <div class="act-quote" data-key="act2_quote">നിവേദിത ജനിച്ചത് ജാഗ്രതയുടെ ഭവനത്തിലല്ല. ധൈര്യത്തിന്റെ ഭവനത്തിലാണ്.</div>
+      </div>
+
+      <div class="act-card fade-in">
+        <div class="act-number" data-key="act3_num">ഘട്ടം III · 2007</div>
+        <h3 class="act-title" data-key="act3_title">ഒറ്റക്ക് — തളരാതെ, മൂന്ന് മക്കളെ വളർത്തി</h3>
+        <p class="act-body" data-key="act3_body">2007-ൽ ഭർത്താവ് മരണപ്പെട്ടു. മൂന്ന് ചെറുപ്രായക്കാരായ മക്കൾ മാത്രം ബാക്കി. അടിതളർന്നില്ല. പൊതുജീവിതത്തിൽ നിന്ന് പിന്മാറിയില്ല. നിയമ ജോലി തുടർന്നു, പൊതുപ്രവർത്തനം തുടർന്നു, മക്കളെ ഉരുക്കുകൊണ്ടുള്ള മനഃക്കരുത്തോടെ വളർത്തി.<br><br>ഇന്ന് ആ മൂന്ന് മക്കളും ബിരുദാനന്തര ബിരുദ ധാരികളും ശ്രദ്ധേയരുമാണ്.</p>
+        <div class="act-quote" data-key="act3_quote">ഒറ്റക്ക് മൂന്ന് മക്കളെ വളർത്തി, അമ്മയുടെ പൈതൃകം ഏറ്റെടുത്ത്, ഒരു മണ്ഡലത്തിനായി പോരാടി — ഇത് ഒരു രാഷ്ട്രീയ ജീവിതമല്ല. ഇത് ഒരു വിളിയാണ്.</div>
+      </div>
+
+      <div class="act-card fade-in">
+        <div class="act-number" data-key="act4_num">ഘട്ടം IV · 2016–2026</div>
+        <h3 class="act-title" data-key="act4_title">അഭിഭാഷക — ഇനി MLA</h3>
+        <p class="act-body" data-key="act4_body">2016-ൽ ഗുരുവായൂർ നിയമസഭാ മണ്ഡലത്തിൽ ആദ്യമായി മൽസരിച്ചു. കഴിഞ്ഞ 5 വർഷത്തിനിടെ ജനകീയ കാരണങ്ങൾക്ക് വേണ്ടി 40-ലധികം കേസുകൾ ഏറ്റുവാങ്ങി — ഓരോ കേസും ജനങ്ങൾക്കായുള്ള പോരാട്ടത്തിന്റെ ബഹുമതി.<br><br>ബി.ജെ.പി. തൃശൂർ ജില്ലാ അധ്യക്ഷ, മഹിളാ മോർച്ച സംസ്ഥാന അധ്യക്ഷ — ഈ അനുഭവ സമ്പത്തും ദേശീയ ബന്ധങ്ങളും ഗുരുവായൂരിലേക്ക് കൊണ്ടുവരുന്നു.</p>
+        <div class="act-quote" data-key="act4_quote">ഗുരുവായൂർ മേഖലയിൽ ലീഗൽ എയ്ഡ് വിങ് സ്ഥാപിച്ചു. സൗജന്യ നിയമസഹായം നൽകുന്നു. നീതി തൊഴിൽ മാത്രമല്ല — ദൗത്യമാണ്.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CANDIDATE FEATURE (second photo) -->
+<section class="candidate-feature" id="feature">
+  <div class="candidate-feature-inner">
+    <div class="candidate-photo-feature fade-in">
+      <div class="feature-photo-box" id="featurePhotoBox">
+        <div class="photo-placeholder" id="featurePhotoPlaceholder">
+          <div style="font-size:2.5rem;opacity:0.2">🪷</div>
+          <div style="font-size:0.78rem;opacity:0.3" data-key="photo_upload_hint">ഫോട്ടോ ഇവിടെ</div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-text fade-in">
+      <span class="section-label" data-key="feature_label">ഒരു ജീവിതം, ഒരു ദൗത്യം</span>
+      <h2 class="section-title" data-key="feature_title">ഗുരുവായൂർ അർഹിക്കുന്ന<br>നേതാവ്</h2>
+      <p class="feature-body" data-key="feature_body">ബി.ജെ.പി. തൃശൂർ ജില്ലാ അധ്യക്ഷ, അഭിഭാഷക, മഹിളാ ശക്തി നേതാവ്, രണ്ടാം തലമുറ RSS-ജനസംഘ് പ്രവർത്തക — ഇതെല്ലാം ഒരാളിൽ. ഗുരുവായൂരിലെ ജനജീവിതത്തോടൊപ്പം, ദില്ലിയിലെ അധികാരകേന്ദ്രങ്ങളുമായി ബന്ധം — ഇത് ഗുരുവായൂരിന്റെ ആവശ്യം.</p>
+      <div class="feature-stat-row">
+        <div class="feature-stat">
+          <span class="feature-stat-num">40+</span>
+          <span class="feature-stat-label" data-key="stat1_label">പോരാട്ടക്കേസുകൾ</span>
+        </div>
+        <div class="feature-stat">
+          <span class="feature-stat-num">₹1.5Cr</span>
+          <span class="feature-stat-label" data-key="stat2_label">വിദ്യാഭ്യാസ ഫണ്ട്</span>
+        </div>
+        <div class="feature-stat">
+          <span class="feature-stat-num">2×</span>
+          <span class="feature-stat-label" data-key="stat3_label">ജയിൽവാസം</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-section" id="journey">
+  <div style="max-width:1200px;margin:0 auto;">
+    <span class="section-label" data-key="tl_label">രാഷ്ട്രീയ യാത്ര</span>
+    <h2 class="section-title" style="margin-bottom:44px;" data-key="tl_title">സേവനത്തിന്റെ ജീവിതം</h2>
+    <div class="timeline">
+      <div class="tl-item fade-in">
+        <div class="tl-year">1975</div>
+        <div class="tl-content">
+          <div class="tl-title" data-key="tl1_title">കേരളത്തിലെ ഏറ്റവും കുഞ്ഞ് രാഷ്ട്രീയ തടവുകാരി</div>
+          <div class="tl-desc" data-key="tl1_desc">മൂന്ന് വയസ്സ് തികയുന്നതിനു മുൻപ്, അടിയന്തരാവസ്ഥ കാലത്ത്, അമ്മ രാധ ബാലകൃഷ്ണനോടൊപ്പം RSS-ജനസംഘ് നേതാവ് — പാലക്കാട് കോട്ട ജയിലിൽ.</div>
+        </div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-year">1990s</div>
+        <div class="tl-content">
+          <div class="tl-title" data-key="tl2_title">നിയമ ബിരുദവും പ്രാക്ടീസും</div>
+          <div class="tl-desc" data-key="tl2_desc">അഭിഭാഷകയായി ഗുരുവായൂർ ഭാഗത്ത് സൗജന്യ നിയമസഹായം ആരംഭിച്ചു. സാധാരണക്കാർക്ക് വേണ്ടി നിയമം ആയുധമാക്കി.</div>
+        </div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-year">2007</div>
+        <div class="tl-content">
+          <div class="tl-title" data-key="tl3_title">ഒറ്റ കൈയ്യാൽ ഒരു കുടുംബം</div>
+          <div class="tl-desc" data-key="tl3_desc">ഭർത്താവ് നഷ്ടപ്പെട്ടശേഷം മൂന്ന് മക്കളെ ഒറ്റക്ക് വളർത്തി — ഇന്ന് അവർ മൂന്ന് പേരും ബിരുദാനന്തര ബിരുദ ധാരികൾ.</div>
+        </div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-year">2016</div>
+        <div class="tl-content">
+          <div class="tl-title" data-key="tl4_title">ഗുരുവായൂർ — ആദ്യ നിയമസഭ മൽസരം</div>
+          <div class="tl-desc" data-key="tl4_desc">കേരള നിയമസഭ തിരഞ്ഞെടുപ്പ് ഗുരുവായൂർ മണ്ഡലത്തിൽ. ശക്തമായ ജനകീയ സ്വീകാര്യത കെട്ടിപ്പടുത്തു.</div>
+        </div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-year">2016–21</div>
+        <div class="tl-content">
+          <div class="tl-title" data-key="tl5_title">മഹിളാ മോർച്ച കേരള സംസ്ഥാന അധ്യക്ഷ</div>
+          <div class="tl-desc" data-key="tl5_desc">സ്ത്രീ ശാക്തീകരണ പദ്ധതികൾ, നിയമ ബോധവൽക്കരണ ക്ലാസ്സുകൾ, സ്വയം തൊഴിൽ പദ്ധതികൾ — ഒരു ദൗത്യത്തിന്റെ ആത്മബലം.</div>
+        </div>
+      </div>
+      <div class="tl-item fade-in">
+        <div class="tl-year">ഇന്ന്</div>
+        <div class="tl-content">
+          <div class="tl-title" data-key="tl6_title">ബി.ജെ.പി. തൃശൂർ ജില്ലാ അധ്യക്ഷ</div>
+          <div class="tl-desc" data-key="tl6_desc">ജില്ലാ പ്രസിഡന്റ് ആയി, ദേശീയ ബന്ധം ശക്തിപ്പെടുത്തി, 2026 ഗുരുവായൂർ ദൗത്യത്തിന് ഒരുങ്ങുന്നു.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements-section" id="achievements">
+  <div style="max-width:1200px;margin:0 auto;">
+    <span class="section-label" data-key="ach_label">തെളിയിക്കപ്പെട്ട ട്രാക്ക് റെക്കോർഡ്</span>
+    <h2 class="section-title" data-key="ach_title">നേട്ടങ്ങൾ — ഒരു വ്യക്തിയുടെ</h2>
+    <div class="achievements-grid">
+      <div class="achievement-card fade-in">
+        <span class="achievement-icon">🏫</span>
+        <span class="achievement-stat">₹1.5Cr</span>
+        <span class="achievement-label" data-key="ach1_label">വിദ്യാഭ്യാസ നിക്ഷേപം</span>
+        <p class="achievement-desc" data-key="ach1_desc">ഗുരുവായൂരിലെ മൂന്ന് പ്രധാന സ്‌കൂളുകളുടെ വികസനത്തിനായി കേന്ദ്ര ഫണ്ടിൽ നിന്ന് ₹1.5 കോടി ലഭ്യമാക്കി.</p>
+      </div>
+      <div class="achievement-card fade-in">
+        <span class="achievement-icon">⚖️</span>
+        <span class="achievement-stat" data-key="ach2_stat">സൗജന്യം</span>
+        <span class="achievement-label" data-key="ach2_label">നിയമ സഹായം</span>
+        <p class="achievement-desc" data-key="ach2_desc">ദരിദ്രർക്കും പിന്നോക്കക്കാർക്കും സൗജന്യ നിയമ സഹായം. ഗുരുവായൂർ മേഖലയിൽ ലീഗൽ എയ്ഡ് വിങ് സ്ഥാപിച്ചു.</p>
+      </div>
+      <div class="achievement-card fade-in">
+        <span class="achievement-icon">👴</span>
+        <span class="achievement-stat" data-key="ach3_stat">മുതിർന്നവർ</span>
+        <span class="achievement-label" data-key="ach3_label">ക്ഷേമ പദ്ധതി</span>
+        <p class="achievement-desc" data-key="ach3_desc">60 വയസ്സിന് മുകളിലുള്ളവർക്ക് കേന്ദ്ര സർക്കാർ പദ്ധതി ഉപയോഗിച്ച് ആധുനിക ഉപകരണങ്ങളും സഹായങ്ങളും.</p>
+      </div>
+      <div class="achievement-card fade-in">
+        <span class="achievement-icon">🚂</span>
+        <span class="achievement-stat" data-key="ach4_stat">റെയിൽ</span>
+        <span class="achievement-label" data-key="ach4_label">ഗതാഗത ബന്ധം</span>
+        <p class="achievement-desc" data-key="ach4_desc">ഗുരുവായൂർ ട്രെയിൻ സർവീസ് പുനരാരംഭം, അൺഡർപാസ് നിർമ്മാണ തടസ്സ നിവാരണം — റെയിൽവേ മന്ത്രാലയവുമായി ഇടപെട്ടു.</p>
+      </div>
+      <div class="achievement-card fade-in">
+        <span class="achievement-icon">🔥</span>
+        <span class="achievement-stat">40+</span>
+        <span class="achievement-label" data-key="ach5_label">ജനകീയ പോരാട്ടം</span>
+        <p class="achievement-desc" data-key="ach5_desc">5 വർഷത്തിൽ 40-ലധികം കേസ്. ഓരോ കേസും ജനങ്ങൾക്ക് വേണ്ടി ഏറ്റെടുത്ത പോരാട്ടത്തിന്റെ ബഹുമതി.</p>
+      </div>
+      <div class="achievement-card fade-in">
+        <span class="achievement-icon">🪷</span>
+        <span class="achievement-stat" data-key="ach6_stat">സ്ത്രീ</span>
+        <span class="achievement-label" data-key="ach6_label">ശക്തി നേതൃത്വം</span>
+        <p class="achievement-desc" data-key="ach6_desc">മഹിളാ മോർച്ച സംസ്ഥാന അധ്യക്ഷ, മഹിളാ സമാജം തലവൻ — സ്ത്രീകളുടെ ഉന്നമനം ദൗത്യം.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANDATE -->
+<section class="mandate-section" id="mandate">
+  <div class="mandate-inner">
+    <span class="section-label" data-key="mandate_label">2026 കാഴ്ചപ്പാട്</span>
+    <h2 class="section-title" data-key="mandate_title">ഗുരുവായൂരിനായുള്ള നമ്മുടെ ദൗത്യം</h2>
+    <div class="mandate-grid">
+      <div class="mandate-item fade-in">
+        <div class="mandate-num">01</div>
+        <div>
+          <div class="mandate-title" data-key="m1_title">വിദ്യാഭ്യാസം & സ്കൂളുകൾ</div>
+          <p class="mandate-desc" data-key="m1_desc">ഗുരുവായൂർ സർക്കാർ സ്കൂളുകളുടെ ആധുനികവൽക്കരണം. കൂടുതൽ കേന്ദ്ര ഫണ്ട്. നമ്മുടെ കുട്ടികൾക്ക് മികച്ച ഭാവി.</p>
+        </div>
+      </div>
+      <div class="mandate-item fade-in">
+        <div class="mandate-num">02</div>
+        <div>
+          <div class="mandate-title" data-key="m2_title">റെയിൽ ഗതാഗതം</div>
+          <p class="mandate-desc" data-key="m2_desc">ഗുരുവായൂർ ട്രെയിൻ സർവീസ് പൂർണ്ണ പുനരാരംഭം, അൺഡർപാസ് നിർമ്മാണ പൂർത്തിയാക്കൽ.</p>
+        </div>
+      </div>
+      <div class="mandate-item fade-in">
+        <div class="mandate-num">03</div>
+        <div>
+          <div class="mandate-title" data-key="m3_title">എല്ലാവർക്കും നീതി</div>
+          <p class="mandate-desc" data-key="m3_desc">ലീഗൽ എയ്ഡ് വിങ്ങിന്റെ വ്യാപനം — ഫണ്ടില്ലായ്മ കൊണ്ട് നീതി നിഷേധിക്കപ്പെടരുത്.</p>
+        </div>
+      </div>
+      <div class="mandate-item fade-in">
+        <div class="mandate-num">04</div>
+        <div>
+          <div class="mandate-title" data-key="m4_title">സ്ത്രീ & സ്വയം തൊഴിൽ</div>
+          <p class="mandate-desc" data-key="m4_desc">മഹിളാ മോർച്ച ശൃംഖലയുപയോഗിച്ച് സ്ത്രീകൾക്ക് ടെക്നിക്കൽ, സ്കിൽ ഡെവലപ്മെന്റ് ട്രൈനിങ്.</p>
+        </div>
+      </div>
+      <div class="mandate-item fade-in">
+        <div class="mandate-num">05</div>
+        <div>
+          <div class="mandate-title" data-key="m5_title">മുതിർന്ന പൗരന്മാർ</div>
+          <p class="mandate-desc" data-key="m5_desc">ആരോഗ്യ, സാമ്പത്തിക, സാമൂഹ്യ ക്ഷേമ പദ്ധതികളുടെ ആനുകൂല്യം മണ്ഡലത്തിലെ ഓരോ മുതിർന്ന പൗരനും.</p>
+        </div>
+      </div>
+      <div class="mandate-item fade-in">
+        <div class="mandate-num">06</div>
+        <div>
+          <div class="mandate-title" data-key="m6_title">കേന്ദ്രം-കേരളം പാലം</div>
+          <p class="mandate-desc" data-key="m6_desc">കേന്ദ്ര സർക്കാർ ബന്ധം ഉള്ള ഒരു നേതാവ് ഗുരുവായൂരിന് പദ്ധതികളും ഫണ്ടും നേരിട്ട് കൊണ്ടുവരും.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-section">
+  <div style="max-width:1200px;margin:0 auto;">
+    <span class="section-label" data-key="why_label">എന്തുകൊണ്ട് നിവേദിത</span>
+    <h2 class="section-title" data-key="why_title">ഗുരുവായൂർ അർഹിക്കുന്ന<br>സ്ഥാനാർഥി</h2>
+    <div class="qualities-grid">
+      <div class="quality-item fade-in">
+        <div class="quality-icon-wrap">⚖️</div>
+        <div class="quality-text">
+          <h4 data-key="q1_title">നിയമ വൈദഗ്ദ്ധ്യം</h4>
+          <p data-key="q1_desc">കോടതിയിലും മണ്ഡലത്തിലും പൗരന്മാർക്ക് വേണ്ടി പോരാടുന്ന പ്രാക്ടീസിങ് അഡ്വക്കേറ്റ്. അവകാശം അറിയും — അത് സംരക്ഷിക്കും.</p>
+        </div>
+      </div>
+      <div class="quality-item fade-in">
+        <div class="quality-icon-wrap">🏛️</div>
+        <div class="quality-text">
+          <h4 data-key="q2_title">കേന്ദ്ര ഭരണ ബന്ധം</h4>
+          <p data-key="q2_desc">ബി.ജെ.പി. ജില്ലാ അധ്യക്ഷ എന്ന നിലയ്ക്ക്, ദേശീയ പദ്ധതികളും കേന്ദ്ര ഫണ്ടും നേരിട്ട് ഗുരുവായൂരിലേക്ക് കൊണ്ടുവരാൻ ശേഷി.</p>
+        </div>
+      </div>
+      <div class="quality-item fade-in">
+        <div class="quality-icon-wrap">🔥</div>
+        <div class="quality-text">
+          <h4 data-key="q3_title">പോരാട്ടത്തിന്റെ ആൾ</h4>
+          <p data-key="q3_desc">40-ലധികം കേസ്. രണ്ടുതവണ ജയിൽ. ഒരിക്കലും നിശ്ശബ്ദരാക്കപ്പെട്ടിട്ടില്ല. ഒരിക്കലും കീഴടങ്ങിയിട്ടില്ല.</p>
+        </div>
+      </div>
+      <div class="quality-item fade-in">
+        <div class="quality-icon-wrap">👩</div>
+        <div class="quality-text">
+          <h4 data-key="q4_title">സ്ത്രീ ശക്തിയുടെ ആൾ</h4>
+          <p data-key="q4_desc">മഹിളാ സമാജം, മഹിളാ മോർച്ച സംസ്ഥാന അധ്യക്ഷ — സ്ത്രീകളുടെ നിയമ, സാമ്പത്തിക, സാമൂഹ്യ ഉന്നമനം ജീവിത ദൗത്യം.</p>
+        </div>
+      </div>
+      <div class="quality-item fade-in">
+        <div class="quality-icon-wrap">🌐</div>
+        <div class="quality-text">
+          <h4 data-key="q5_title">ബഹുഭാഷ നേതാവ്</h4>
+          <p data-key="q5_desc">മലയാളം, തമിഴ് (വായന, എഴുത്ത്, സംസാരം), ഹിന്ദി (സംസാരം), കന്നഡ (വായന) — ഒരു ജനകീയ പാലം.</p>
+        </div>
+      </div>
+      <div class="quality-item fade-in">
+        <div class="quality-icon-wrap">🪷</div>
+        <div class="quality-text">
+          <h4 data-key="q6_title">ജനഹൃദയ നേതൃത്വം</h4>
+          <p data-key="q6_desc">ഗുരുവായൂർ ജനം "സരസ്വതി" എന്ന് വിളിക്കുന്നു — ഇത് ഒരു പ്രചാരണ ഖ്യാതിയല്ല, ഹൃദയ ഖ്യാതിയാണ്.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGACY -->
+<section class="legacy-section">
+  <div class="legacy-inner">
+    <div class="fade-in">
+      <span class="section-label" data-key="legacy_label">ഒരു പൈതൃകം</span>
+      <h2 class="section-title" data-key="legacy_title">പ്രസ്ഥാനത്തിന്റെ<br>മകൾ</h2>
+      <p class="legacy-body" data-key="legacy_body">നിവേദിത രാഷ്ട്രീയം തിരഞ്ഞെടുത്തതല്ല. രാഷ്ട്രീയം അവളെ തിരഞ്ഞെടുത്തതാണ് — പാലക്കാട് ജയിൽ മുറിക്കുള്ളിൽ, മൂന്ന് വയസ്സ് തികഞ്ഞ ഒരു കുഞ്ഞ് ആകുമ്പോൾ.<br><br>അമ്മ രാധ ബാലകൃഷ്ണൻ — ജനസംഘ്, ബി.ജെ.പി. തലത്തിൽ ഒരു തലമുറയ്ക്ക് പ്രചോദനം. ജൂൺ 10, 2012-ൽ ലോകം വിട്ടുപോയി. പക്ഷേ ആ ആത്മാവ് ഇന്നും ജ്വലിക്കുന്നു — മകളിലൂടെ.<br><br>രണ്ട് തലമുറകളിലെ ധൈര്യം. ഒരൊറ്റ അടർക്കാത്ത ദൗത്യ നൂൽ.</p>
+    </div>
+    <div class="fade-in">
+      <div class="legacy-quote-card">
+        <p data-key="legacy_quote">എല്ലാ രാഷ്ട്രീയ പ്രകടന പത്രികകളും, ആഴത്തിൽ, ഒരു ജീവചരിത്രം മറ്റൊരു വേഷത്തിൽ ആണ്. നയങ്ങൾ ആ വ്യക്തിയെ വെളിപ്പെടുത്തുന്നു. മുൻഗണനകൾ ആ വേദനയെ. കാഴ്ചപ്പാട് — ഒരാളിൽ നിന്ന് എന്ത് എടുക്കപ്പെട്ടു, പകരം അവർ എന്ത് പണിതു — എന്ന് വ്യക്തമാക്കുന്നു.</p>
+        <cite data-key="legacy_cite">— അഡ്വ. നിവേദിത സുബ്രഹ്മണ്യന്റെ ജീവിതത്തെക്കുറിച്ച്</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOTE CTA -->
+<section class="vote-section" id="vote">
+  <div class="vote-inner">
+    <span class="vote-lotus">🪷</span>
+    <h2 class="vote-heading">
+      <span data-key="vote_h1">നിവേദിതക്ക് </span><span class="hl" data-key="vote_h2">വോട്ട്.</span><br>
+      <span data-key="vote_h3">ഗുരുവായൂരിന് </span><span class="hl" data-key="vote_h4">ഭാവി.</span>
+    </h2>
+    <p class="vote-sub" data-key="vote_sub">ഗുരുവായൂരിന്റെ ശബ്ദം. ജനങ്ങളുടെ പ്രതിനിധി.</p>
+    <a href="#story" class="vote-cta-btn">🪷 &nbsp;<span data-key="vote_cta_btn">അവളുടെ കഥ വായിക്കൂ</span></a>
+    <div class="footer-strip">
+      <span>ഭാരതീയ ജനതാ പാർട്ടി</span>
+      <span class="sep">·</span>
+      <span>NDA</span>
+      <span class="sep">·</span>
+      <span data-key="footer_const">ഗുരുവായൂർ മണ്ഡലം</span>
+      <span class="sep">·</span>
+      <span data-key="footer_dist">തൃശൂർ ജില്ല</span>
+      <span class="sep">·</span>
+      <span>കേരളം</span>
+    </div>
+  </div>
+</section>
+
+<!-- LOGIN MODAL -->
+<div class="modal-overlay" id="loginModal">
+  <div class="login-modal">
+    <button class="modal-close" onclick="closeLogin()">✕</button>
+    <div class="login-logo">
+      <span class="login-logo-icon">🪷</span>
+      <div class="login-logo-title">Admin Portal</div>
+      <div class="login-logo-sub">BJP · Niveditha Campaign</div>
+    </div>
+    <div id="loginErr" class="login-err">Invalid username or password.</div>
+    <div class="form-group">
+      <label class="form-label" for="loginUser">Username</label>
+      <input class="form-input" type="text" id="loginUser" placeholder="Enter username" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="loginPass">Password</label>
+      <input class="form-input" type="password" id="loginPass" placeholder="Enter password">
+    </div>
+    <button class="login-submit" onclick="doLogin()">LOGIN →</button>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div class="admin-panel" id="adminPanel">
+  <div class="admin-topbar">
+    <h2>🪷 Campaign Admin Panel</h2>
+    <div class="admin-topbar-right">
+      <button class="admin-logout" onclick="doLogout()">Logout</button>
+      <button class="admin-close" onclick="closeAdmin()">✕</button>
+    </div>
+  </div>
+  <div class="admin-body">
+
+    <!-- Candidate Photo 1 -->
+    <div class="admin-section">
+      <div class="admin-section-title"><span>📸</span> Candidate Photos</div>
+      <div class="admin-photo-slot">
+        <div class="admin-photo-preview" id="adminHeroPreview">🪷</div>
+        <div class="admin-photo-info">
+          <h4>Hero Section Photo</h4>
+          <p>Portrait image (3:4 ratio recommended). Face centred top. This appears in the main hero section.</p>
+        </div>
+        <div class="admin-photo-actions">
+          <button class="admin-upload-btn" onclick="document.getElementById('heroFileInput').click()">Upload</button>
+          <button class="admin-delete-btn" onclick="deleteCandidatePhoto('hero')">Delete</button>
+        </div>
+      </div>
+      <div class="admin-photo-slot">
+        <div class="admin-photo-preview" id="adminFeaturePreview">🪷</div>
+        <div class="admin-photo-info">
+          <h4>Feature Section Photo</h4>
+          <p>Portrait image (4:5 ratio recommended). Face centred top. This appears in the mid-page feature section.</p>
+        </div>
+        <div class="admin-photo-actions">
+          <button class="admin-upload-btn" onclick="document.getElementById('featureFileInput').click()">Upload</button>
+          <button class="admin-delete-btn" onclick="deleteCandidatePhoto('feature')">Delete</button>
+        </div>
+      </div>
+      <input type="file" id="heroFileInput" accept="image/*" style="display:none" onchange="uploadCandidatePhoto('hero',this)">
+      <input type="file" id="featureFileInput" accept="image/*" style="display:none" onchange="uploadCandidatePhoto('feature',this)">
+    </div>
+
+    <!-- Campaign Photos -->
+    <div class="admin-section">
+      <div class="admin-section-title"><span>🖼️</span> Campaign Highlight Photos
+        <span style="font-size:0.75rem;font-weight:400;color:rgba(255,255,255,0.35);margin-left:auto;">Landscape 16:9 images. Candidate always centred.</span>
+      </div>
+      <div class="campaign-photos-grid" id="adminCampaignGrid">
+        <!-- populated by JS -->
+      </div>
+      <div class="admin-upload-area" id="campaignUploadArea">
+        <span class="admin-upload-area-icon">📤</span>
+        <div class="admin-upload-area-text">
+          Click to upload campaign photos<br>
+          <span style="font-size:0.78rem;opacity:0.6">Landscape 16:9 recommended. Ensure candidate is in the centre.</span>
+        </div>
+        <div class="progress-bar-wrap" id="uploadProgress"><div class="progress-bar" id="progressBar"></div></div>
+      </div>
+      <input type="file" id="campaignFileInput" accept="image/*" multiple style="display:none" onchange="uploadCampaignPhotos(this)">
+    </div>
+
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- HIDDEN FILE INPUTS -->
+<script>
+// ─────────────────────────────────────────────────
+// STRINGS
+// ─────────────────────────────────────────────────
+const strings = {
+  ml: {
+    nav_story:"കഥ", nav_journey:"യാത്ര", nav_achieve:"നേട്ടങ്ങൾ", nav_mandate:"ദൗത്യം", nav_vote:"വോട്ട്",
+    hero_tag:"ഭാരതീയ ജനതാ പാർട്ടി · NDA · ഗുരുവായൂർ",
+    hero_adv:"അഭിഭാഷക", hero_name1:"നിവേദിത", hero_name2:"സുബ്രഹ്മണ്യൻ",
+    hero_desig:"ബി.ജെ.പി. തൃശൂർ ജില്ലാ അധ്യക്ഷ · മുൻ മഹിളാ മോർച്ച സംസ്ഥാന അധ്യക്ഷ",
+    hero_const:"MLA സ്ഥാനാർഥി — ഗുരുവായൂർ മണ്ഡലം",
+    hero_quote_pre:"ഗുരുവായൂർ ജനം അവളെ ",
+    hero_quote_name:'"സരസ്വതി"',
+    hero_quote_post:" എന്ന് വിളിക്കുന്നു — ശാന്തമായ, പ്രകാശമുള്ള, ആദർശനിഷ്ഠയുള്ള. അവൾ പ്രവേശിക്കുന്ന ഓരോ ഇടത്തും വെളിച്ചം കൊണ്ടുവരുന്ന ഒരു നേതാവ്.",
+    btn_story:"അവളുടെ കഥ", btn_vision:"നമ്മുടെ കാഴ്ചപ്പാട്",
+    photo_upload_hint:"ഫോട്ടോ ഇവിടെ", photo_badge:"BJP · NDA സ്ഥാനാർഥി",
+    slider_label:"പ്രചാരണ ഹൈലൈറ്റ്സ്", slider_title:"ജനങ്ങളോടൊപ്പം",
+    story_label:"അവളുടെ കഥ",
+    story_title:"പ്രതിരോധത്തിൽ ജനിച്ചവൾ,<br>സേവനത്തിനായി ഉയർന്നവൾ",
+    act1_num:"ഘട്ടം I · 1975", act1_title:"കേരളത്തിലെ ഏറ്റവും കുഞ്ഞ് രാഷ്ട്രീയ തടവുകാരി",
+    act1_body:"1975-ലെ അടിയന്തരാവസ്ഥ കാലത്ത് ഇന്ദിരാ ഗാന്ധി പൗരസ്വാതന്ത്ര്യം റദ്ദാക്കി. കേരളത്തിൽ 7,314-ലധികം പേർ ജയിലിലടക്കപ്പെട്ടു. അക്കൂട്ടത്തിൽ രാധ ബാലകൃഷ്ണനും ഉണ്ടായിരുന്നു — മൂന്ന് വയസ്സ് മാത്രമുള്ള കുഞ്ഞ് നിവേദിതയോടൊപ്പം.<br><br>പൊലീസ് അമ്മയിൽ നിന്ന് കുഞ്ഞിനെ വേർപെടുത്താൻ ശ്രമിച്ചെങ്കിലും കുഞ്ഞ് അമ്മയുടെ കൈകൾ ഒഴിഞ്ഞ് വിടേണ്ടതില്ലെന്ന് ഉറച്ചു. ഒടുവിൽ ഇരുവരെയും ഒന്നിച്ച് അറസ്റ്റ് ചെയ്ത് പാലക്കാട് കോട്ട ജയിലിൽ ഒരു മാസം പാർപ്പിച്ചു.",
+    act1_quote:"കേരളത്തിലെ ഏറ്റവും പ്രായം കുറഞ്ഞ രാഷ്ട്രീയ തടവുകാരിക്ക് അന്ന് മൂന്ന് വയസ്സ് മാത്രം. എന്തിനാണ് ജയിലിൽ കിടക്കുന്നതെന്ന് മനസ്സ് അറിഞ്ഞില്ലെങ്കിലും, ശരീരം ഓർമ്മിച്ചു — ശരിയുടെ ഭാഗത്ത് നിൽക്കുമ്പോൾ ചിലപ്പോൾ ജയിൽ മുറിക്കുള്ളിൽ നിൽക്കേണ്ടി വരും.",
+    act2_num:"ഘട്ടം II · 1983", act2_title:"മുഖ്യമന്ത്രിക്ക് അടി കൊടുത്ത ഒരമ്മ",
+    act2_body:"ഇതാണ് നിവേദിതയെ വളർത്തിയ അമ്മ. രാധ ബാലകൃഷ്ണൻ — ധീരയും ആദർശനിഷ്ഠയുള്ളവളും. നീലക്കൽ പ്രക്ഷോഭകാലത്ത്, ഹിന്ദു ഭക്തരെ പരിഹസിച്ച മുഖ്യമന്ത്രി കരുണാകരനെ ഗുരുവായൂർ ക്ഷേത്രത്തിൽ പ്രവേശിക്കുന്നതിൽ നിന്ന് തടഞ്ഞ് സ്ത്രീ സമൂഹത്തെ ഒരുമിപ്പിച്ചു.<br><br>ഒടുവിൽ വീണ്ടും ജയിലിൽ പോയ ആ അമ്മ, ഒരു ഹീറോ ആയി തിരിച്ചുവന്നു. ബി.ജെ.പി. കേരള മഹിളാ മോർച്ചയുടെ സംസ്ഥാന അധ്യക്ഷ പദവിയിൽ ആ ജ്വാലയോടെ തന്നെ സേവനം ചെയ്തു.",
+    act2_quote:"നിവേദിത ജനിച്ചത് ജാഗ്രതയുടെ ഭവനത്തിലല്ല. ധൈര്യത്തിന്റെ ഭവനത്തിലാണ്.",
+    act3_num:"ഘട്ടം III · 2007", act3_title:"ഒറ്റക്ക് — തളരാതെ, മൂന്ന് മക്കളെ വളർത്തി",
+    act3_body:"2007-ൽ ഭർത്താവ് മരണപ്പെട്ടു. മൂന്ന് ചെറുപ്രായക്കാരായ മക്കൾ മാത്രം ബാക്കി. അടിതളർന്നില്ല. പൊതുജീവിതത്തിൽ നിന്ന് പിന്മാറിയില്ല. നിയമ ജോലി തുടർന്നു, പൊതുപ്രവർത്തനം തുടർന്നു, മക്കളെ ഉരുക്കുകൊണ്ടുള്ള മനഃക്കരുത്തോടെ വളർത്തി.<br><br>ഇന്ന് ആ മൂന്ന് മക്കളും ബിരുദാനന്തര ബിരുദ ധാരികളും ശ്രദ്ധേയരുമാണ്.",
+    act3_quote:"ഒറ്റക്ക് മൂന്ന് മക്കളെ വളർത്തി, അമ്മയുടെ പൈതൃകം ഏറ്റെടുത്ത്, ഒരു മണ്ഡലത്തിനായി പോരാടി — ഇത് ഒരു രാഷ്ട്രീയ ജീവിതമല്ല. ഇത് ഒരു വിളിയാണ്.",
+    act4_num:"ഘട്ടം IV · 2016–2026", act4_title:"അഭിഭാഷക — ഇനി MLA",
+    act4_body:"2016-ൽ ഗുരുവായൂർ നിയമസഭാ മണ്ഡലത്തിൽ ആദ്യമായി മൽസരിച്ചു. കഴിഞ്ഞ 5 വർഷത്തിനിടെ ജനകീയ കാരണങ്ങൾക്ക് വേണ്ടി 40-ലധികം കേസുകൾ ഏറ്റുവാങ്ങി — ഓരോ കേസും ജനങ്ങൾക്കായുള്ള പോരാട്ടത്തിന്റെ ബഹുമതി.<br><br>ബി.ജെ.പി. തൃശൂർ ജില്ലാ അധ്യക്ഷ, മഹിളാ മോർച്ച സംസ്ഥാന അധ്യക്ഷ — ഈ അനുഭവ സമ്പത്തും ദേശീയ ബന്ധങ്ങളും ഗുരുവായൂരിലേക്ക് കൊണ്ടുവരുന്നു.",
+    act4_quote:"ഗുരുവായൂർ മേഖലയിൽ ലീഗൽ എയ്ഡ് വിങ് സ്ഥാപിച്ചു. സൗജന്യ നിയമസഹായം നൽകുന്നു. നീതി തൊഴിൽ മാത്രമല്ല — ദൗത്യമാണ്.",
+    feature_label:"ഒരു ജീവിതം, ഒരു ദൗത്യം", feature_title:"ഗുരുവായൂർ അർഹിക്കുന്ന<br>നേതാവ്",
+    feature_body:"ബി.ജെ.പി. തൃശൂർ ജില്ലാ അധ്യക്ഷ, അഭിഭാഷക, മഹിളാ ശക്തി നേതാവ്, രണ്ടാം തലമുറ RSS-ജനസംഘ് പ്രവർത്തക — ഇതെല്ലാം ഒരാളിൽ. ഗുരുവായൂരിലെ ജനജീവിതത്തോടൊപ്പം, ദില്ലിയിലെ അധികാരകേന്ദ്രങ്ങളുമായി ബന്ധം — ഇത് ഗുരുവായൂരിന്റെ ആവശ്യം.",
+    stat1_label:"പോരാട്ടക്കേസുകൾ", stat2_label:"വിദ്യാഭ്യാസ ഫണ്ട്", stat3_label:"ജയിൽവാസം",
+    tl_label:"രാഷ്ട്രീയ യാത്ര", tl_title:"സേവനത്തിന്റെ ജീവിതം",
+    tl1_title:"കേരളത്തിലെ ഏറ്റവും കുഞ്ഞ് രാഷ്ട്രീയ തടവുകാരി",
+    tl1_desc:"മൂന്ന് വയസ്സ് തികയുന്നതിനു മുൻപ്, അടിയന്തരാവസ്ഥ കാലത്ത്, അമ്മ രാധ ബാലകൃഷ്ണനോടൊപ്പം — പാലക്കാട് കോട്ട ജയിലിൽ.",
+    tl2_title:"നിയമ ബിരുദവും പ്രാക്ടീസും",
+    tl2_desc:"അഭിഭാഷകയായി ഗുരുവായൂർ ഭാഗത്ത് സൗജന്യ നിയമസഹായം ആരംഭിച്ചു.",
+    tl3_title:"ഒറ്റ കൈയ്യാൽ ഒരു കുടുംബം",
+    tl3_desc:"ഭർത്താവ് നഷ്ടപ്പെട്ടശേഷം മൂന്ന് മക്കളെ ഒറ്റക്ക് വളർത്തി — ഇന്ന് അവർ മൂന്ന് പേരും ബിരുദാനന്തര ബിരുദ ധാരികൾ.",
+    tl4_title:"ഗുരുവായൂർ — ആദ്യ നിയമസഭ മൽസരം",
+    tl4_desc:"കേരള നിയമസഭ തിരഞ്ഞെടുപ്പ് ഗുരുവായൂർ മണ്ഡലത്തിൽ. ശക്തമായ ജനകീയ സ്വീകാര്യത.",
+    tl5_title:"മഹിളാ മോർച്ച കേരള സംസ്ഥാന അധ്യക്ഷ",
+    tl5_desc:"സ്ത്രീ ശാക്തീകരണ പദ്ധതികൾ, നിയമ ബോധവൽക്കരണ ക്ലാസ്സുകൾ, സ്വയം തൊഴിൽ പദ്ധതികൾ.",
+    tl6_title:"ബി.ജെ.പി. തൃശൂർ ജില്ലാ അധ്യക്ഷ",
+    tl6_desc:"ദേശീയ ബന്ധം ശക്തിപ്പെടുത്തി, 2026 ഗുരുവായൂർ ദൗത്യത്തിന് ഒരുങ്ങുന്നു.",
+    ach_label:"തെളിയിക്കപ്പെട്ട ട്രാക്ക് റെക്കോർഡ്", ach_title:"നേട്ടങ്ങൾ — ഒരു വ്യക്തിയുടെ",
+    ach1_label:"വിദ്യാഭ്യാസ നിക്ഷേപം", ach1_desc:"ഗുരുവായൂരിലെ മൂന്ന് പ്രധാന സ്‌കൂളുകളുടെ വികസനത്തിനായി കേന്ദ്ര ഫണ്ടിൽ നിന്ന് ₹1.5 കോടി ലഭ്യമാക്കി.",
+    ach2_stat:"സൗജന്യം", ach2_label:"നിയമ സഹായം", ach2_desc:"ദരിദ്രർക്കും പിന്നോക്കക്കാർക്കും സൗജന്യ നിയമ സഹായം. ഗുരുവായൂർ മേഖലയിൽ ലീഗൽ എയ്ഡ് വിങ് സ്ഥാപിച്ചു.",
+    ach3_stat:"മുതിർന്നവർ", ach3_label:"ക്ഷേമ പദ്ധതി", ach3_desc:"60 വയസ്സിന് മുകളിലുള്ളവർക്ക് കേന്ദ്ര സർക്കാർ പദ്ധതി ഉപയോഗിച്ച് ആധുനിക ഉപകരണങ്ങളും സഹായങ്ങളും.",
+    ach4_stat:"റെയിൽ", ach4_label:"ഗതാഗത ബന്ധം", ach4_desc:"ഗുരുവായൂർ ട്രെയിൻ സർവീസ് പുനരാരംഭം, അൺഡർപാസ് നിർമ്മാണ തടസ്സ നിവാരണം.",
+    ach5_label:"ജനകീയ പോരാട്ടം", ach5_desc:"5 വർഷത്തിൽ 40-ലധികം കേസ്. ഓരോ കേസും ജനങ്ങൾക്ക് വേണ്ടിയുള്ള പോരാട്ടത്തിന്റെ ബഹുമതി.",
+    ach6_stat:"സ്ത്രീ", ach6_label:"ശക്തി നേതൃത്വം", ach6_desc:"മഹിളാ മോർച്ച സംസ്ഥാന അധ്യക്ഷ, മഹിളാ സമാജം തലവൻ — സ്ത്രീകളുടെ ഉന്നമനം ദൗത്യം.",
+    mandate_label:"2026 കാഴ്ചപ്പാട്", mandate_title:"ഗുരുവായൂരിനായുള്ള നമ്മുടെ ദൗത്യം",
+    m1_title:"വിദ്യാഭ്യാസം & സ്കൂളുകൾ", m1_desc:"ഗുരുവായൂർ സർക്കാർ സ്കൂളുകളുടെ ആധുനികവൽക്കരണം. കൂടുതൽ കേന്ദ്ര ഫണ്ട്. നമ്മുടെ കുട്ടികൾക്ക് മികച്ച ഭാവി.",
+    m2_title:"റെയിൽ ഗതാഗതം", m2_desc:"ഗുരുവായൂർ ട്രെയിൻ സർവീസ് പൂർണ്ണ പുനരാരംഭം, അൺഡർപാസ് നിർമ്മാണ പൂർത്തിയാക്കൽ.",
+    m3_title:"എല്ലാവർക്കും നീതി", m3_desc:"ലീഗൽ എയ്ഡ് വിങ്ങിന്റെ വ്യാപനം — ഫണ്ടില്ലായ്മ കൊണ്ട് നീതി നിഷേധിക്കപ്പെടരുത്.",
+    m4_title:"സ്ത്രീ & സ്വയം തൊഴിൽ", m4_desc:"മഹിളാ മോർച്ച ശൃംഖലയുപയോഗിച്ച് സ്ത്രീകൾക്ക് ടെക്നിക്കൽ, സ്കിൽ ഡെവലപ്മെന്റ് ട്രൈനിങ്.",
+    m5_title:"മുതിർന്ന പൗരന്മാർ", m5_desc:"ആരോഗ്യ, സാമ്പത്തിക, സാമൂഹ്യ ക്ഷേമ പദ്ധതികളുടെ ആനുകൂല്യം മണ്ഡലത്തിലെ ഓരോ മുതിർന്ന പൗരനും.",
+    m6_title:"കേന്ദ്രം-കേരളം പാലം", m6_desc:"കേന്ദ്ര സർക്കാർ ബന്ധം ഉള്ള ഒരു നേതാവ് ഗുരുവായൂരിന് പദ്ധതികളും ഫണ്ടും നേരിട്ട് കൊണ്ടുവരും.",
+    why_label:"എന്തുകൊണ്ട് നിവേദിത", why_title:"ഗുരുവായൂർ അർഹിക്കുന്ന<br>സ്ഥാനാർഥി",
+    q1_title:"നിയമ വൈദഗ്ദ്ധ്യം", q1_desc:"കോടതിയിലും മണ്ഡലത്തിലും പൗരന്മാർക്ക് വേണ്ടി പോരാടുന്ന പ്രാക്ടീസിങ് അഡ്വക്കേറ്റ്. അവകാശം അറിയും — അത് സംരക്ഷിക്കും.",
+    q2_title:"കേന്ദ്ര ഭരണ ബന്ധം", q2_desc:"ബി.ജെ.പി. ജില്ലാ അധ്യക്ഷ എന്ന നിലയ്ക്ക്, ദേശീയ പദ്ധതികളും കേന്ദ്ര ഫണ്ടും നേരിട്ട് ഗുരുവായൂരിലേക്ക് കൊണ്ടുവരാൻ ശേഷി.",
+    q3_title:"പോരാട്ടത്തിന്റെ ആൾ", q3_desc:"40-ലധികം കേസ്. രണ്ടുതവണ ജയിൽ. ഒരിക്കലും നിശ്ശബ്ദരാക്കപ്പെട്ടിട്ടില്ല.",
+    q4_title:"സ്ത്രീ ശക്തിയുടെ ആൾ", q4_desc:"മഹിളാ സമാജം, മഹിളാ മോർച്ച സംസ്ഥാന അധ്യക്ഷ — സ്ത്രീകളുടെ ഉന്നമനം ജീവിത ദൗത്യം.",
+    q5_title:"ബഹുഭാഷ നേതാവ്", q5_desc:"മലയാളം, തമിഴ് (വായന, എഴുത്ത്, സംസാരം), ഹിന്ദി (സംസാരം), കന്നഡ (വായന) — ഒരു ജനകീയ പാലം.",
+    q6_title:"ജനഹൃദയ നേതൃത്വം", q6_desc:'ഗുരുവായൂർ ജനം "സരസ്വതി" എന്ന് വിളിക്കുന്നു — ഇത് ഒരു പ്രചാരണ ഖ്യാതിയല്ല, ഹൃദയ ഖ്യാതിയാണ്.',
+    legacy_label:"ഒരു പൈതൃകം", legacy_title:"പ്രസ്ഥാനത്തിന്റെ<br>മകൾ",
+    legacy_body:"നിവേദിത രാഷ്ട്രീയം തിരഞ്ഞെടുത്തതല്ല. രാഷ്ട്രീയം അവളെ തിരഞ്ഞെടുത്തതാണ് — പാലക്കാട് ജയിൽ മുറിക്കുള്ളിൽ, മൂന്ന് വയസ്സ് തികഞ്ഞ ഒരു കുഞ്ഞ് ആകുമ്പോൾ.<br><br>അമ്മ രാധ ബാലകൃഷ്ണൻ — ജനസംഘ്, ബി.ജെ.പി. തലത്തിൽ ഒരു തലമുറയ്ക്ക് പ്രചോദനം. ജൂൺ 10, 2012-ൽ ലോകം വിട്ടുപോയി. പക്ഷേ ആ ആത്മാവ് ഇന്നും ജ്വലിക്കുന്നു — മകളിലൂടെ.<br><br>രണ്ട് തലമുറകളിലെ ധൈര്യം. ഒരൊറ്റ അടർക്കാത്ത ദൗത്യ നൂൽ.",
+    legacy_quote:"എല്ലാ രാഷ്ട്രീയ പ്രകടന പത്രികകളും, ആഴത്തിൽ, ഒരു ജീവചരിത്രം മറ്റൊരു വേഷത്തിൽ ആണ്. നയങ്ങൾ ആ വ്യക്തിയെ വെളിപ്പെടുത്തുന്നു. മുൻഗണനകൾ ആ വേദനയെ. കാഴ്ചപ്പാട് — ഒരാളിൽ നിന്ന് എന്ത് എടുക്കപ്പെട്ടു, പകരം അവർ എന്ത് പണിതു — എന്ന് വ്യക്തമാക്കുന്നു.",
+    legacy_cite:"— അഡ്വ. നിവേദിത സുബ്രഹ്മണ്യന്റെ ജീവിതത്തെക്കുറിച്ച്",
+    vote_h1:"നിവേദിതക്ക് ", vote_h2:"വോട്ട്.", vote_h3:"ഗുരുവായൂരിന് ", vote_h4:"ഭാവി.",
+    vote_sub:"ഗുരുവായൂരിന്റെ ശബ്ദം. ജനങ്ങളുടെ പ്രതിനിധി.",
+    vote_cta_btn:"അവളുടെ കഥ വായിക്കൂ",
+    footer_const:"ഗുരുവായൂർ മണ്ഡലം", footer_dist:"തൃശൂർ ജില്ല",
+  },
+  en: {
+    nav_story:"Story", nav_journey:"Journey", nav_achieve:"Achievements", nav_mandate:"Mandate", nav_vote:"Vote",
+    hero_tag:"Bharatiya Janata Party · NDA · Guruvayur",
+    hero_adv:"Advocate", hero_name1:"Niveditha", hero_name2:"Subhramanyan",
+    hero_desig:"BJP Thrissur District President · Former Mahila Morcha State President",
+    hero_const:"MLA Candidate — Guruvayur Constituency",
+    hero_quote_pre:"The people of Guruvayur call her ",
+    hero_quote_name:'"Saraswathi"',
+    hero_quote_post:" — calm, illuminating, principled. A leader who carries light into every space she enters.",
+    btn_story:"Her Story", btn_vision:"Our Vision",
+    photo_upload_hint:"Candidate Photo", photo_badge:"BJP · NDA CANDIDATE",
+    slider_label:"Campaign Highlights", slider_title:"With the People",
+    story_label:"Her Story",
+    story_title:"Born Into Resistance,<br>Built For Service",
+    act1_num:"ACT I · 1975", act1_title:"Kerala's Youngest Political Prisoner",
+    act1_body:"During the Emergency of 1975, Indira Gandhi suspended civil liberties. Over 7,314 people were jailed in Kerala. Among them: Radha Balakrishnan — and her three-year-old daughter Niveditha.<br><br>When police tried to separate mother and child, the infant would not let go. So they were arrested together and held in Palakkad Fort prison for nearly a month.",
+    act1_quote:"Kerala's youngest political prisoner was not yet old enough to understand why she was there. But her body remembered what her mind could not name — that standing on the right side sometimes means standing inside a cell.",
+    act2_num:"ACT II · 1983", act2_title:"The Mother Who Slapped a Chief Minister",
+    act2_body:"This is the woman who raised Niveditha. Radha Balakrishnan — fierce, principled, unbreakable. During the Nilakkal Movement, she organised women to stop Chief Minister Karunakaran from entering the Guruvayur Temple.<br><br>She went to jail again and came home a hero. She went on to serve as BJP Kerala Mahila Morcha State President — with the same fire.",
+    act2_quote:"Niveditha was not raised in a home of caution. She was raised in a home of courage.",
+    act3_num:"ACT III · 2007", act3_title:"Widowed, Unbroken — A Mother of Three",
+    act3_body:"In 2007, her husband passed away, leaving three young children. She did not fold. She continued her legal practice and civic work, raising her children with iron will.<br><br>All three children hold Master's degrees today and have built distinguished careers.",
+    act3_quote:"She raised three children alone, carried her mother's legacy forward, and still found time to fight for a constituency. That is not a political career. That is a calling.",
+    act4_num:"ACT IV · 2016–2026", act4_title:"The Advocate Who Became the Candidate",
+    act4_body:"She contested the 2016 elections in Guruvayur. In the last 5 years, over 40 cases have been filed against her — each one a badge earned fighting for the people's cause.<br><br>As BJP Thrissur District President and former Mahila Morcha State President, she brings legal expertise and national connections to Guruvayur.",
+    act4_quote:"She established the Regional Legal Aid Wing in Guruvayur and provides free legal services. Justice is not just her profession — it is her mission.",
+    feature_label:"One Life, One Mission", feature_title:"The Leader<br>Guruvayur Deserves",
+    feature_body:"BJP Thrissur District President, Advocate, Women's Rights Leader, second-generation RSS-Jana Sangh activist — all in one person. Deep roots in Guruvayur's streets, direct connections to Delhi's power centres. That is exactly what Guruvayur needs.",
+    stat1_label:"Cases Fought", stat2_label:"Education Fund", stat3_label:"Jail Terms",
+    tl_label:"Political Journey", tl_title:"A Life in Service",
+    tl1_title:"Kerala's Youngest Political Prisoner",
+    tl1_desc:"Held in Palakkad Fort prison at age 3 during the Emergency, alongside mother Radha Balakrishnan — an RSS and Jana Sangh leader.",
+    tl2_title:"Law Degree & Practice",
+    tl2_desc:"Pursued law and began providing free legal aid to the marginalised in and around Guruvayur.",
+    tl3_title:"Raised Three Children Alone",
+    tl3_desc:"After her husband's passing, raised three children single-handedly — all three today hold Master's degrees.",
+    tl4_title:"First Assembly Contest — Guruvayur",
+    tl4_desc:"Contested the Kerala Legislative Assembly elections in Guruvayur, building a strong cross-party grassroots presence.",
+    tl5_title:"Mahila Morcha Kerala State President",
+    tl5_desc:"Women's empowerment programmes, legal awareness classes, self-employment schemes — leading with purpose.",
+    tl6_title:"BJP Thrissur District President",
+    tl6_desc:"Strengthening national connections, preparing for the 2026 Guruvayur mandate.",
+    ach_label:"Proven Track Record", ach_title:"Achievements That Speak",
+    ach1_label:"Education Investment", ach1_desc:"Secured ₹1.5 Cr from Central funds for development of three major schools in Guruvayur.",
+    ach2_stat:"Free", ach2_label:"Legal Aid", ach2_desc:"Free legal services for the economically backward. Established the Regional Legal Aid Wing in Guruvayur.",
+    ach3_stat:"Senior", ach3_label:"Welfare Scheme", ach3_desc:"Leveraged Central Government schemes to provide advanced equipment and welfare assistance to citizens above 60 years.",
+    ach4_stat:"Rail", ach4_label:"Connectivity", ach4_desc:"Worked with the Railway Ministry to resume Guruvayur Passenger Train services and clear underpass construction obstacles.",
+    ach5_label:"People's Fight", ach5_desc:"40+ cases filed against her in 5 years. Each one earned fighting for the rights of the people. Not deterred once.",
+    ach6_stat:"Women", ach6_label:"Empowerment Leader", ach6_desc:"Mahila Morcha State President — multiple self-employment and legal awareness campaigns empowering women across Kerala.",
+    mandate_label:"2026 Vision", mandate_title:"Our Mandate for Guruvayur",
+    m1_title:"Education & Schools", m1_desc:"Complete modernisation of Guruvayur's government schools. More Central funding. Better infrastructure for our children.",
+    m2_title:"Railway Connectivity", m2_desc:"Full resumption of Guruvayur Passenger Train services and completion of the underpass construction.",
+    m3_title:"Justice for All", m3_desc:"Expansion of the Legal Aid Wing — no citizen of Guruvayur denied justice for lack of funds.",
+    m4_title:"Women & Self-Employment", m4_desc:"Dedicated skill-development and self-employment programmes for women, building on the Mahila Morcha network.",
+    m5_title:"Senior Citizens First", m5_desc:"Expanded health, social and financial welfare coverage for every senior citizen in the constituency.",
+    m6_title:"Centre-Kerala Bridge", m6_desc:"A leader with Central government connections brings schemes, funds and projects directly to Guruvayur.",
+    why_label:"Why She Leads", why_title:"The Candidate<br>Guruvayur Deserves",
+    q1_title:"Legal Expertise", q1_desc:"A practising advocate who fights for citizens in court and in the constituency. She knows rights — and she defends them.",
+    q2_title:"Central Government Access", q2_desc:"As BJP Thrissur District President, she has the connections to bring national schemes and Central funding to Guruvayur directly.",
+    q3_title:"Battle-Tested Courage", q3_desc:"40+ cases. Jailed twice. Never silenced. Never surrendered.",
+    q4_title:"Women's Champion", q4_desc:"From Mahila Samajam to Mahila Morcha State President — a lifetime dedicated to women's legal, social and economic empowerment.",
+    q5_title:"Multilingual Leader", q5_desc:"Malayalam, Tamil (read/write/speak), Hindi (speak), Kannada (read) — a true bridge across communities.",
+    q6_title:"Grassroots Presence", q6_desc:'Guruvayur calls her "Saraswathi" — not because she campaigns for it, but because people gave her that name from the heart.',
+    legacy_label:"The Legacy", legacy_title:"A Daughter of<br>the Movement",
+    legacy_body:"Niveditha did not choose politics. Politics chose her — in a Palakkad jail cell when she was three years old.<br><br>Her mother Radha Balakrishnan inspired a generation. She passed away on June 10, 2012. But that spirit still burns — through her daughter.<br><br>Two generations of courage. One unbroken thread of service.",
+    legacy_quote:"Every political manifesto is, at its core, a biography in disguise. The policies reveal the person. The priorities reveal the pain. The vision reveals what was taken from someone — and what they chose to build in its place.",
+    legacy_cite:"— On the life of Adv. Niveditha Subhramanyan",
+    vote_h1:"Vote for ", vote_h2:"Niveditha.", vote_h3:"Vote for ", vote_h4:"Guruvayur.",
+    vote_sub:"The Voice of Guruvayur. The People's Candidate.",
+    vote_cta_btn:"Read Her Full Story",
+    footer_const:"Guruvayur Constituency", footer_dist:"Thrissur District",
+  }
+};
+
+let currentLang = 'ml';
+
+function setLang(l) {
+  currentLang = l;
+  document.documentElement.setAttribute('data-lang', l);
+  document.getElementById('btnML').classList.toggle('active', l === 'ml');
+  document.getElementById('btnEN').classList.toggle('active', l === 'en');
+  document.getElementById('navTitle').innerHTML = l === 'ml'
+    ? 'അഡ്വ. നിവേദിത സുബ്രഹ്മണ്യൻ<br><span style="font-size:0.68rem;color:rgba(255,200,100,0.55)">ബി.ജെ.പി · ഗുരുവായൂർ മണ്ഡലം</span>'
+    : 'Adv. Niveditha Subhramanyan<br><span style="font-size:0.68rem;color:rgba(255,200,100,0.55)">BJP · Guruvayur Constituency</span>';
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const k = el.getAttribute('data-key');
+    if (strings[l][k] !== undefined) el.innerHTML = strings[l][k];
+  });
+}
+
+// ─────────────────────────────────────────────────
+// CHAKRA SPOKES
+// ─────────────────────────────────────────────────
+(function(){
+  const g = document.getElementById('cspokes');
+  for(let i=0;i<24;i++){
+    const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+    const angle = i * 15;
+    line.setAttribute('x1','50'); line.setAttribute('y1','42.5');
+    line.setAttribute('x2','50'); line.setAttribute('y2','2.5');
+    line.setAttribute('stroke','white'); line.setAttribute('stroke-width','0.6');
+    line.setAttribute('transform',`rotate(${angle},50,50)`);
+    g.appendChild(line);
+  }
+})();
+
+// ─────────────────────────────────────────────────
+// SCROLL FADE
+// ─────────────────────────────────────────────────
+const fadeObs = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const siblings = Array.from(entry.target.parentElement.children);
+      const idx = siblings.indexOf(entry.target);
+      setTimeout(() => entry.target.classList.add('visible'), idx * 80);
+      fadeObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-in').forEach(el => fadeObs.observe(el));
+
+// ─────────────────────────────────────────────────
+// STORAGE HELPERS
+// ─────────────────────────────────────────────────
+async function storageGet(key) {
+  try { const r = await window.storage.get(key); return r ? r.value : null; }
+  catch { return null; }
+}
+async function storageSet(key, val) {
+  try { await window.storage.set(key, val); return true; }
+  catch { return false; }
+}
+async function storageDelete(key) {
+  try { await window.storage.delete(key); return true; }
+  catch { return false; }
+}
+async function storageList(prefix) {
+  try { const r = await window.storage.list(prefix); return r ? r.keys : []; }
+  catch { return []; }
+}
+
+// ─────────────────────────────────────────────────
+// CANDIDATE PHOTOS (Hero + Feature)
+// ─────────────────────────────────────────────────
+async function loadCandidatePhotos() {
+  const heroData = await storageGet('candidate_hero');
+  if (heroData) renderCandidatePhoto('hero', heroData);
+  const featureData = await storageGet('candidate_feature');
+  if (featureData) renderCandidatePhoto('feature', featureData);
+}
+
+function renderCandidatePhoto(slot, base64) {
+  if (slot === 'hero') {
+    const box = document.getElementById('heroPhotoBox');
+    document.getElementById('heroPhotoPlaceholder').style.display = 'none';
+    let img = box.querySelector('img');
+    if (!img) { img = document.createElement('img'); box.appendChild(img); }
+    img.src = base64; img.alt = 'Adv. Niveditha Subhramanyan';
+    // update admin preview
+    const prev = document.getElementById('adminHeroPreview');
+    prev.innerHTML = `<img src="${base64}" alt="">`;
+  } else {
+    const box = document.getElementById('featurePhotoBox');
+    document.getElementById('featurePhotoPlaceholder').style.display = 'none';
+    let img = box.querySelector('img');
+    if (!img) { img = document.createElement('img'); box.appendChild(img); }
+    img.src = base64; img.alt = 'Adv. Niveditha Subhramanyan';
+    const prev = document.getElementById('adminFeaturePreview');
+    prev.innerHTML = `<img src="${base64}" alt="">`;
+  }
+}
+
+function uploadCandidatePhoto(slot, input) {
+  const file = input.files[0]; if (!file) return;
+  const reader = new FileReader();
+  reader.onload = async (e) => {
+    const b64 = e.target.result;
+    await storageSet(`candidate_${slot}`, b64);
+    renderCandidatePhoto(slot, b64);
+    showToast('Photo uploaded successfully!');
+    input.value = '';
+  };
+  reader.readAsDataURL(file);
+}
+
+async function deleteCandidatePhoto(slot) {
+  await storageDelete(`candidate_${slot}`);
+  if (slot === 'hero') {
+    const box = document.getElementById('heroPhotoBox');
+    const img = box.querySelector('img'); if (img) img.remove();
+    document.getElementById('heroPhotoPlaceholder').style.display = 'flex';
+    document.getElementById('adminHeroPreview').innerHTML = '🪷';
+  } else {
+    const box = document.getElementById('featurePhotoBox');
+    const img = box.querySelector('img'); if (img) img.remove();
+    document.getElementById('featurePhotoPlaceholder').style.display = 'flex';
+    document.getElementById('adminFeaturePreview').innerHTML = '🪷';
+  }
+  showToast('Photo removed.');
+}
+
+// ─────────────────────────────────────────────────
+// CAMPAIGN PHOTOS & SLIDER
+// ─────────────────────────────────────────────────
+let campaignPhotos = []; // [{key, data, caption}]
+let currentSlide = 0;
+let sliderInterval = null;
+
+async function loadCampaignPhotos() {
+  const keys = await storageList('cphoto_');
+  campaignPhotos = [];
+  for (const k of keys) {
+    const val = await storageGet(k);
+    if (val) {
+      try {
+        const obj = JSON.parse(val);
+        campaignPhotos.push({ key: k, data: obj.data, caption: obj.caption || '' });
+      } catch { campaignPhotos.push({ key: k, data: val, caption: '' }); }
+    }
+  }
+  renderSlider();
+  renderAdminCampaignGrid();
+}
+
+function renderSlider() {
+  const track = document.getElementById('sliderTrack');
+  const dots = document.getElementById('sliderDots');
+  track.innerHTML = '';
+  dots.innerHTML = '';
+
+  const photos = campaignPhotos;
+
+  if (photos.length === 0) {
+    // Show 3 placeholder slides
+    for (let i = 0; i < 3; i++) {
+      const item = document.createElement('div');
+      item.className = 'slide-item';
+      item.innerHTML = `
+        <div class="slide-placeholder">
+          <span class="slide-placeholder-icon">📷</span>
+          <div class="slide-placeholder-text">
+            ${currentLang === 'ml' ? 'ഇവിടെ പ്രചാരണ ഫോട്ടോകൾ' : 'Campaign photos will appear here'}<br>
+            <span style="font-size:0.78rem;opacity:0.6">${currentLang === 'ml' ? 'Admin ലോഗിൻ ചെയ്ത് അപ്‌ലോഡ് ചെയ്യൂ' : 'Login as admin to upload photos'}</span>
+          </div>
+        </div>`;
+      track.appendChild(item);
+      const dot = document.createElement('button');
+      dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => goToSlide(i);
+      dots.appendChild(dot);
+    }
+  } else {
+    photos.forEach((p, i) => {
+      const item = document.createElement('div');
+      item.className = 'slide-item';
+      item.innerHTML = `
+        <div class="slide-img-wrap">
+          <img src="${p.data}" alt="Campaign photo ${i+1}" loading="lazy">
+          ${p.caption ? `<div class="slide-caption">${p.caption}</div>` : ''}
+        </div>`;
+      track.appendChild(item);
+      const dot = document.createElement('button');
+      dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => goToSlide(i);
+      dots.appendChild(dot);
+    });
+  }
+
+  currentSlide = 0;
+  updateSliderPosition();
+  startSliderAuto();
+}
+
+function goToSlide(n) {
+  const total = Math.max(campaignPhotos.length, 3);
+  currentSlide = (n + total) % total;
+  updateSliderPosition();
+  resetSliderAuto();
+}
+function slideMove(dir) {
+  const total = Math.max(campaignPhotos.length, 3);
+  currentSlide = (currentSlide + dir + total) % total;
+  updateSliderPosition();
+  resetSliderAuto();
+}
+function updateSliderPosition() {
+  const track = document.getElementById('sliderTrack');
+  const items = track.querySelectorAll('.slide-item');
+  if (!items.length) return;
+  const itemW = items[0].offsetWidth + 16;
+  const wrapW = track.parentElement.offsetWidth;
+  const offset = (wrapW / 2) - (itemW / 2) - (currentSlide * itemW);
+  track.style.transform = `translateX(${offset}px)`;
+  document.querySelectorAll('.slider-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === currentSlide);
+  });
+}
+function startSliderAuto() {
+  if (sliderInterval) clearInterval(sliderInterval);
+  sliderInterval = setInterval(() => {
+    const total = Math.max(campaignPhotos.length, 3);
+    currentSlide = (currentSlide + 1) % total;
+    updateSliderPosition();
+  }, 4500);
+}
+function resetSliderAuto() {
+  startSliderAuto();
+}
+window.addEventListener('resize', () => { updateSliderPosition(); });
+
+// ─────────────────────────────────────────────────
+// ADMIN CAMPAIGN GRID
+// ─────────────────────────────────────────────────
+function renderAdminCampaignGrid() {
+  const grid = document.getElementById('adminCampaignGrid');
+  grid.innerHTML = '';
+  campaignPhotos.forEach((p, i) => {
+    const div = document.createElement('div');
+    div.className = 'campaign-photo-item';
+    div.innerHTML = `
+      <img src="${p.data}" alt="" loading="lazy">
+      <button class="campaign-photo-delete" onclick="deleteCampaignPhoto('${p.key}')">✕</button>`;
+    grid.appendChild(div);
+  });
+}
+
+async function uploadCampaignPhotos(input) {
+  const files = Array.from(input.files);
+  if (!files.length) return;
+  const prog = document.getElementById('uploadProgress');
+  const bar = document.getElementById('progressBar');
+  prog.style.display = 'block';
+  for (let i = 0; i < files.length; i++) {
+    bar.style.width = `${((i+1)/files.length)*100}%`;
+    await new Promise(resolve => {
+      const reader = new FileReader();
+      reader.onload = async (e) => {
+        const key = `cphoto_${Date.now()}_${i}`;
+        const obj = JSON.stringify({ data: e.target.result, caption: '' });
+        await storageSet(key, obj);
+        campaignPhotos.push({ key, data: e.target.result, caption: '' });
+        resolve();
+      };
+      reader.readAsDataURL(files[i]);
+    });
+  }
+  bar.style.width = '100%';
+  setTimeout(() => { prog.style.display = 'none'; bar.style.width = '0%'; }, 600);
+  input.value = '';
+  renderSlider();
+  renderAdminCampaignGrid();
+  showToast(`${files.length} photo${files.length > 1 ? 's' : ''} uploaded!`);
+}
+
+async function deleteCampaignPhoto(key) {
+  await storageDelete(key);
+  campaignPhotos = campaignPhotos.filter(p => p.key !== key);
+  renderSlider();
+  renderAdminCampaignGrid();
+  showToast('Photo deleted.');
+}
+
+document.getElementById('campaignUploadArea').addEventListener('click', () => {
+  document.getElementById('campaignFileInput').click();
+});
+
+// ─────────────────────────────────────────────────
+// AUTH
+// ─────────────────────────────────────────────────
+const CREDS = { user: 'NDANivedithaS', pass: 'ArjunS@730!' };
+let isLoggedIn = false;
+
+function openLogin() {
+  if (isLoggedIn) { openAdmin(); return; }
+  document.getElementById('loginModal').classList.add('open');
+  setTimeout(() => document.getElementById('loginUser').focus(), 100);
+}
+function closeLogin() {
+  document.getElementById('loginModal').classList.remove('open');
+  document.getElementById('loginErr').style.display = 'none';
+  document.getElementById('loginUser').value = '';
+  document.getElementById('loginPass').value = '';
+}
+function doLogin() {
+  const u = document.getElementById('loginUser').value.trim();
+  const p = document.getElementById('loginPass').value;
+  if (u === CREDS.user && p === CREDS.pass) {
+    isLoggedIn = true;
+    closeLogin();
+    document.getElementById('adminNavBtn').textContent = '⚙ Panel';
+    openAdmin();
+  } else {
+    document.getElementById('loginErr').style.display = 'block';
+    document.getElementById('loginPass').value = '';
+  }
+}
+document.getElementById('loginPass').addEventListener('keydown', e => {
+  if (e.key === 'Enter') doLogin();
+});
+document.getElementById('loginModal').addEventListener('click', e => {
+  if (e.target === document.getElementById('loginModal')) closeLogin();
+});
+
+function openAdmin() {
+  document.getElementById('adminPanel').classList.add('open');
+  renderAdminCampaignGrid();
+}
+function closeAdmin() {
+  document.getElementById('adminPanel').classList.remove('open');
+}
+function doLogout() {
+  isLoggedIn = false;
+  document.getElementById('adminNavBtn').textContent = '⚙ Admin';
+  closeAdmin();
+  showToast('Logged out.');
+}
+
+// ─────────────────────────────────────────────────
+// TOAST
+// ─────────────────────────────────────────────────
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// ─────────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────────
+(async function init() {
+  setLang('ml'); // load Malayalam first
+  await loadCandidatePhotos();
+  await loadCampaignPhotos();
+
+  // Hero entrance animation
+  const heroText = document.querySelector('.hero-text');
+  const heroPhoto = document.querySelector('.hero-photo-wrap');
+  heroText.style.cssText = 'opacity:0;transform:translateX(-28px);transition:opacity 0.9s ease,transform 0.9s ease;';
+  heroPhoto.style.cssText = 'opacity:0;transform:translateX(28px);transition:opacity 0.9s ease 0.25s,transform 0.9s ease 0.25s;';
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    heroText.style.opacity = '1'; heroText.style.transform = 'translateX(0)';
+    heroPhoto.style.opacity = '1'; heroPhoto.style.transform = 'translateX(0)';
+  }));
+})();
+</script>
+
+<script>
+function setSectionBg(id, imageUrl, opacity = 0.4) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.style.backgroundImage = `url(${imageUrl})`;
+  el.style.opacity = opacity;
+}
+
+function setSocialLinks(insta, fb, yt) {
+  document.getElementById("instaLink").href = insta;
+  document.getElementById("fbLink").href = fb;
+  document.getElementById("ytLink").href = yt;
+}
+</script>
+
+</body>
+</html>
